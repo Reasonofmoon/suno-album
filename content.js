@@ -264,6 +264,17 @@ Yeah, the silence pulls me away`,
                 { "name": "Ver 2 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_lonely_satellite_v2_f5a2.mp3" }
             ]
         }
+,
+        {
+            "id": "487bf0e11137a9f94bf70a24d124c525",
+            "title": "Plateau: Sleepless Night - Lucid Dream",
+            "lyrics": `{"error": "403 Your API key was reported as leaked. Please use another API key."}`,
+            "art": "None",
+            "versions": [
+                { "name": "Ver 1 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_lucid_dream_v1_23e1.mp3" },
+                { "name": "Ver 2 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_lucid_dream_v2_45ea.mp3" }
+            ]
+        }
     ]
         }
 ]
