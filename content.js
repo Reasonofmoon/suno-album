@@ -175,6 +175,62 @@ In my caffeine-fueled solitude`,
                 { "name": "Ver 2 (chirp-crow)", "file": "assets/blue_hour_brew_v2_1a0f.mp3" }
             ]
         }
+,
+        {
+            "id": "e5fd8b54d32162792d932198950e0137",
+            "title": "Fluorescent Dreams",
+            "lyrics": `[Verse 1]
+Graphite lines on a paper seat
+This rattle-hum is a faded beat
+Window frames a pale blue smear
+Watching stations disappear
+Every ghost is just a name
+Flickering inside the frame
+
+[Chorus]
+Floating in these fluorescent dreams
+Just a ghost in the machine
+While the city sleeps in seams of gray
+Let the silence pull me away
+Yeah, the silence pulls me away
+
+[Verse 2]
+Every street light, a memory
+An echo of who I used to be
+Don't know where this tunnel bends
+On this quiet, my soul depends
+Tracing maps on frosted glass
+Hoping that the feeling lasts
+
+[Chorus]
+Floating in these fluorescent dreams
+Just a ghost in the machine
+While the city sleeps in seams of gray
+Let the silence pull me away
+Yeah, the silence pulls me away
+
+[Bridge]
+Maybe I'm not running from
+Anything or anyone
+Just a body in the sway
+Of this empty, steel ballet
+Lost between the stop and start
+Just the beating of my heart
+
+[Chorus]
+Floating in these fluorescent dreams
+(In these dreams)
+Just a ghost in the machine
+(In the machine)
+While the city sleeps in seams of gray
+Let the silence pull me away
+Yeah, the silence pulls me away`,
+            "art": "assets/cover_fluorescent_dreams.jpeg",
+            "versions": [
+                { "name": "Ver 1 (chirp-crow)", "file": "assets/fluorescent_dreams_v1_1944.mp3" },
+                { "name": "Ver 2 (chirp-crow)", "file": "assets/fluorescent_dreams_v2_ddc6.mp3" }
+            ]
+        }
     ]
         }
 ]
