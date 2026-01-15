@@ -286,6 +286,17 @@ Yeah, the silence pulls me away`,
                 { "name": "Ver 2 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_night_drive_v2_4443.mp3" }
             ]
         }
+,
+        {
+            "id": "6169e485af61d1de56e1d5a0fae63d46",
+            "title": "Plateau: Sleepless Night - Dawn Breaking",
+            "lyrics": `{"error": "403 Your API key was reported as leaked. Please use another API key."}`,
+            "art": "assets/cover_plateau_sleepless_night_-_dawn_breaking.jpeg",
+            "versions": [
+                { "name": "Ver 1 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_dawn_breaking_v1_7249.mp3" },
+                { "name": "Ver 2 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_dawn_breaking_v2_e5de.mp3" }
+            ]
+        }
     ]
         }
 ]
