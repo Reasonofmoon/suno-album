@@ -242,6 +242,17 @@ Yeah, the silence pulls me away`,
                 { "name": "Ver 2 (chirp-crow)", "file": "assets/ghost_in_the_wireframe_v2_594a.mp3" }
             ]
         }
+,
+        {
+            "id": "b273b1fb3f69705362c92a9d882229a4",
+            "title": "Plateau: Sleepless Night - White Noise",
+            "lyrics": `{"error": "403 Your API key was reported as leaked. Please use another API key."}`,
+            "art": "assets/cover_plateau_sleepless_night_-_white_noise.jpeg",
+            "versions": [
+                { "name": "Ver 1 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_white_noise_v1_cca8.mp3" },
+                { "name": "Ver 2 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_white_noise_v2_74a7.mp3" }
+            ]
+        }
     ]
         }
 ]
