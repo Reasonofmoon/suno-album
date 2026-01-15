@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.env
+output/
+debug_response.json
+status_dump.json
+latest_task_id.txt
+.DS_Store
