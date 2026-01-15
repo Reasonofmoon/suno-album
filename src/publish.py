@@ -7,19 +7,19 @@ import requests
 from suno_client import SunoClient
 
 # Configuration
-PLAYER_DIR = r"c:\Users\sound\Documents\MyZettelkasten\05 Projects\Reason_Moon_Album\player"
-ASSETS_DIR = os.path.join(PLAYER_DIR, "assets")
-CONTENT_JS = os.path.join(PLAYER_DIR, "content.js")
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CONTENT_FILE = os.path.join(PROJECT_ROOT, "content.js")
+ASSETS_DIR = os.path.join(PROJECT_ROOT, "assets")
+BASE_URL = "assets/" # URL used in content.js for the player
 
 def clean_filename(title):
     return re.sub(r'[\\/*?:"<>|]', "", title).replace(" ", "_").lower()
 
 def update_content_js(new_track_data):
     """
-    Reads content.js, finds the tracks array, appends new data, and rewrites it.
-    This is a bit hacky (parsing JS as text), but works for this simple structure.
+    Updates content.js with the new track data.
     """
-    with open(CONTENT_JS, 'r', encoding='utf-8') as f:
+    with open(CONTENT_FILE, 'r', encoding='utf-8') as f:
         content = f.read()
 
     # Find the injection point (end of tracks array)
@@ -69,6 +69,10 @@ def update_content_js(new_track_data):
     insert_pos = content.rfind('    ]')
     
     if insert_pos == -1:
+        # Fallback for empty or minified
+        insert_pos = content.rfind(']')
+    
+    if insert_pos == -1:
         print("❌ Could not find tracks array end in content.js")
         return
 
@@ -77,7 +81,7 @@ def update_content_js(new_track_data):
     
     new_content = content[:insert_pos] + prefix + track_entry + "\n" + content[insert_pos:]
     
-    with open(CONTENT_JS, 'w', encoding='utf-8') as f:
+    with open(CONTENT_FILE, 'w', encoding='utf-8') as f:
         f.write(new_content)
     
     print("✅ content.js updated successfully.")
@@ -163,7 +167,7 @@ def main():
     
     # Update JS
     update_content_js(new_track)
-    print("\n🎉 Publishing Complete! Open player/index.html to view.")
+    print("\n🎉 Publishing Complete! Open index.html to view.")
 
 if __name__ == "__main__":
     main()

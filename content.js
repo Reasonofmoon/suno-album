@@ -1,7 +1,7 @@
 const ALBUM_DATA = {
     "title": "A Thousand Plateaus",
     "artist": "Reason Moon",
-    "cover_art": "assets/cover.png",
+    "cover_art": "assets/cover_sketch.png",
     "tracks": [
         {
             "id": "plateau_02",

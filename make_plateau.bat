@@ -5,8 +5,20 @@ echo       🌙 REASON MOON: PLATEAU GENERATOR SYSTEM
 echo ========================================================
 echo.
 
-:: 1. Generate Music
-echo [Step 1/3] Generating New Track...
+:: 1. Multi-Agent Composition
+echo [Step 1/4] Convening the Deleuzian Agents...
+set /p TOPIC=Enter a Topic (or press Enter for 'Nomadology'): 
+if "%TOPIC%"=="" set TOPIC=Nomadology
+python src/compose.py "%TOPIC%"
+if %ERRORLEVEL% NEQ 0 (
+    echo ❌ Composition Failed (Check API Keys).
+    pause
+    exit /b
+)
+
+:: 2. Generate Music
+echo.
+echo [Step 2/4] Generating New Track...
 python src/generate_track.py
 if %ERRORLEVEL% NEQ 0 (
     echo ❌ Generation Failed. Exiting.
@@ -14,13 +26,13 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b
 )
 
-:: 2. Read Task ID
+:: 3. Read Task ID
 set /p TASK_ID=<latest_task_id.txt
 echo ✅ Generated Task ID: %TASK_ID%
 
-:: 3. Publish to Player
+:: 4. Publish to Player
 echo.
-echo [Step 2/3] Downloading Assets & Updating Player...
+echo [Step 3/4] Downloading Assets & Updating Player...
 python src/publish.py %TASK_ID%
 if %ERRORLEVEL% NEQ 0 (
     echo ❌ Publishing Failed.
@@ -28,9 +40,9 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b
 )
 
-:: 4. Deploy to GitHub
+:: 5. Deploy to GitHub
 echo.
-echo [Step 3/3] Deploying to GitHub...
+echo [Step 4/4] Deploying to GitHub...
 git add .
 git commit -m "New Plateau Added: %TASK_ID%"
 git push origin main

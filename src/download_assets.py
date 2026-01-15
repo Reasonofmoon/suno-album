@@ -13,7 +13,7 @@ TRACKS = [
     }
 ]
 
-OUTPUT_DIR = r"c:\Users\sound\Documents\MyZettelkasten\05 Projects\Reason_Moon_Album\player\assets"
+OUTPUT_DIR = r"c:\Users\sound\Documents\MyZettelkasten\05 Projects\Reason_Moon_Album\assets"
 
 def main():
     if not os.path.exists(OUTPUT_DIR):

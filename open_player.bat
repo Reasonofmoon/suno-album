@@ -1,0 +1,3 @@
+@echo off
+echo Opening Reason Moon Player...
+start "" "index.html"

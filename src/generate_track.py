@@ -5,58 +5,27 @@ import time
 import json
 import os
 
-# Configuration for this run
-TRACK_TITLE = "Rhizome (Plateau 02)"
-STYLE = "abstract hip hop, glitch hop, idm, experimental, heavy bass"
-LYRICS = """[Intro]
-(Static noise fades in)
-No roots. No center.
-Just lines.
-Lines of flight.
-(Beat drops - heavy, broken, glitchy)
+# Load Track Data
+try:
+    with open("next_track.json", "r", encoding='utf-8') as f:
+        track_data = json.load(f)
+        TRACK_TITLE = track_data.get("title", "Unknown Plateau")
+        STYLE = track_data.get("tags", "experimental")
+        LYRICS = track_data.get("prompt", "[Instrumental]")
+        print(f"📂 Loaded Track: {TRACK_TITLE}")
+except FileNotFoundError:
+    print("❌ 'next_track.json' not found. Please run 'src/compose.py' first.")
+    exit(1)
 
-[Verse 1]
-We are tired of trees, tired of roots
-Tracing the same old path, looking for truth
-But the truth isn't buried, it's spreading out
-Like grass, like weeds, erasing the doubt
-One becomes two, but not as a twin
-Multiplicity starts where the edges begin
-Connect the beat to the noise, the voice to the void
-Every structure you built, is meant to be destroyed
-
-[Chorus]
-Rhizome.
-Connect.
-Any point to any point.
-Rhizome.
-Forget.
-The hierarchy, the joint.
-Map the map, don't trace the trace.
-We are nomads in a smooth space.
-(Rhizome, Rhizome, infinite space)
-
-[Verse 2]
-The General wants a grid, a rigid design
-But we slip through the cracks, curving the line
-A book is a machine, a song is a gear
-Plug it into the world, make the invisible clear
-Wasps and orchids, dancing a code
-Deterritorialize, explode the mode
-No beginning, no end, just the middle state
-Intermezzo living, accelerating fate
-
-[Outro]
-(Beat glitches and slows down)
-And... and... and...
-Always in the middle.
-Becoming.
-(Fade to white noise)"""
+API_KEY = "d38063ca1110014b3e5fc55b7a09c5a6"
 
 def main():
-    client = SunoClient()
     print(f"🚀 Starting Generation for: {TRACK_TITLE}")
     print(f"🎨 Style: {STYLE}")
+
+    # NOTE: API_KEY needs to be defined or imported if SunoClient requires it.
+    # The original code called SunoClient() without arguments.
+    client = SunoClient(API_KEY)
 
     # 1. Generate
     response = client.generate_music(
