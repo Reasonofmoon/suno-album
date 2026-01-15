@@ -275,6 +275,17 @@ Yeah, the silence pulls me away`,
                 { "name": "Ver 2 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_lucid_dream_v2_45ea.mp3" }
             ]
         }
+,
+        {
+            "id": "c6be2766f1199b380fd352a16f563b71",
+            "title": "Plateau: Sleepless Night - Night Drive",
+            "lyrics": `{"error": "403 Your API key was reported as leaked. Please use another API key."}`,
+            "art": "assets/cover_plateau_sleepless_night_-_night_drive.jpeg",
+            "versions": [
+                { "name": "Ver 1 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_night_drive_v1_bcbb.mp3" },
+                { "name": "Ver 2 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_night_drive_v2_4443.mp3" }
+            ]
+        }
     ]
         }
 ]
