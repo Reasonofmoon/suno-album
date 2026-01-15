@@ -120,6 +120,8 @@ def main():
         return
 
     # Parse Data
+    import pprint
+    pprint.pprint(status)
     try:
         clips = status['data']['response']['sunoData']
     except KeyError:
