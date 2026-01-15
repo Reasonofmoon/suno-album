@@ -118,6 +118,63 @@ Watching the city breathe, soft and slow`,
                 { "name": "Ver 2 (chirp-crow)", "file": "assets/midnight_blur_v2_1794.mp3" }
             ]
         }
+,
+        {
+            "id": "1b5c3b0364a971dd54caee9746f69748",
+            "title": "Blue Hour Brew",
+            "lyrics": `[Verse 1]
+White ceramic in my hand
+A quiet island in the land
+Of sleeping streets and faded light
+A single window in the night
+The hiss and bloom of bitter grounds
+The only one of all the sounds
+
+[Chorus]
+And oh, this blue hour brew
+Makes the silence feel brand new
+My heartbeat is the only drum
+Waiting for the sun to come
+The steam curls up, a hazy truth
+In my caffeine-fueled solitude
+
+[Verse 2]
+The Rhodes chords hang like dust in air
+I trace the lines of a single chair
+A clean guitar thought starts to stray
+Reflecting on the coming day
+But here, the clock has lost its hold
+A story in the dark is told
+
+[Chorus]
+And oh, this blue hour brew
+Makes the silence feel brand new
+My heartbeat is the only drum
+Waiting for the sun to come
+The steam curls up, a hazy truth
+In my caffeine-fueled solitude
+
+[Bridge]
+Some would call this loneliness
+An empty, stark, and cold address
+But it's a rhythm, soft and deep
+A private promise I can keep
+Where every crackle on the track
+Means there is no turning back
+
+[Chorus]
+Just me and this blue hour brew
+Making silence feel brand new
+My heartbeat is the only drum
+Waiting for the sun to come
+The steam curls up, a hazy truth
+In my caffeine-fueled solitude`,
+            "art": "assets/cover_blue_hour_brew.jpeg",
+            "versions": [
+                { "name": "Ver 1 (chirp-crow)", "file": "assets/blue_hour_brew_v1_941d.mp3" },
+                { "name": "Ver 2 (chirp-crow)", "file": "assets/blue_hour_brew_v2_1a0f.mp3" }
+            ]
+        }
     ]
         }
 ]
