@@ -86,6 +86,50 @@ def update_content_js(new_track_data):
     
     print("✅ content.js updated successfully.")
 
+from mutagen.mp3 import MP3
+from mutagen.id3 import ID3, APIC, TIT2, TPE1, TALB, USLT, error
+
+def tag_mp3(audio_path, title, artist, album, art_path, lyrics=""):
+    """
+    Embeds ID3 tags into the MP3 file.
+    """
+    try:
+        audio = MP3(audio_path, ID3=ID3)
+        # Add ID3 tag if it doesn't exist
+        try:
+            audio.add_tags()
+        except error:
+            pass
+
+        # Title
+        audio.tags.add(TIT2(encoding=3, text=title))
+        # Artist
+        audio.tags.add(TPE1(encoding=3, text=artist))
+        # Album
+        audio.tags.add(TALB(encoding=3, text=album))
+        
+        # Lyrics (USLT)
+        if lyrics:
+             audio.tags.add(USLT(encoding=3, lang='eng', desc='Lyrics', text=lyrics))
+
+        # Cover Art
+        if art_path and os.path.exists(art_path):
+            with open(art_path, 'rb') as albumart:
+                audio.tags.add(
+                    APIC(
+                        encoding=3, # 3 is for utf-8
+                        mime='image/jpeg', # image/jpeg or image/png
+                        type=3, # 3 is for the cover image
+                        desc=u'Cover',
+                        data=albumart.read()
+                    )
+                )
+        
+        audio.save()
+        print(f"   🏷️  Tagged: {title}")
+    except Exception as e:
+        print(f"❌ Error tagging MP3: {e}")
+
 def download_file(url, filename):
     filepath = os.path.join(ASSETS_DIR, filename)
     print(f"⬇️ Downloading {filename}...")
@@ -100,7 +144,7 @@ def download_file(url, filename):
                 for chunk in r.iter_content(chunk_size=8192):
                     f.write(chunk)
             print(f"   Saved to {filepath}")
-            return f"assets/{filename}"
+            return filepath # Return absolute path for tagging
         else:
             print(f"❌ Failed download: {r.status_code}")
             return None
@@ -157,9 +201,14 @@ def main():
         audio_path = download_file(url, fname)
         
         if audio_path:
+            # Tag the MP3
+            tag_mp3(audio_path, title, "Reason Moon", "A Thousand Plateaus", art_path, lyrics)
+            
+            # Use relative path for content.js
+            rel_path = f"assets/{fname}"
             versions.append({
                 "name": f"Ver {i+1} ({clip.get('modelName', 'V5')})",
-                "file": audio_path
+                "file": rel_path
             })
 
     if not versions:
