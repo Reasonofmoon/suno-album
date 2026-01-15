@@ -61,7 +61,64 @@ Hello, me... it's only you`,
             "versions": [
                 { "name": "Ver 1 (chirp-crow)", "file": "assets/blue_hour_echo_v1_0521.mp3" },
                 { "name": "Ver 2 (chirp-crow)", "file": "assets/blue_hour_echo_v2_cbe7.mp3" }
+        ,
+        {
+            "id": "581d3c5d7a3c82961a0ca1eb90e45ca3",
+            "title": "Midnight Blur",
+            "lyrics": `[Verse 1]
+The pane is cool against my hand tonight
+Watching silver rivers chase the light
+A muted beat is pulsing in the space
+While vinyl static puts on a soft-worn face
+And through the haze, a single, simple truth
+A vertical line of pale electric youth
+
+[Chorus]
+Oh, the midnight blur
+A quiet lullaby of what we were
+Just the neon rain that's falling on the glass
+A perfect, lonely moment, built to last
+A silhouette that's bathed in indigo
+Watching the city breathe, soft and slow
+
+[Verse 2]
+The Rhodes chords hang like smoke inside the room
+A fretless bass to navigate the gloom
+Each chorus-laden guitar lick, a tear
+That traces paths of hope and quiet fear
+They echo off the buildings down below
+A whispered melody I used to know
+
+[Chorus]
+Oh, the midnight blur
+A quiet lullaby of what we were
+Just the neon rain that's falling on the glass
+A perfect, lonely moment, built to last
+A silhouette that's bathed in indigo
+Watching the city breathe, soft and slow
+
+[Bridge]
+And in this solitude, I'm not alone
+I feel the city's pulse inside my bones
+It isn't sad, this solitary art
+It's just the steady beating of a heart
+That found its rhythm in the falling sound
+On this forgotten, consecrated ground
+
+[Chorus]
+Oh, the midnight blur
+A quiet lullaby of what we were
+Just the neon rain that's falling on the glass
+A perfect, lonely moment, built to last
+A silhouette that's bathed in indigo
+Watching the city breathe, soft and slow`,
+            "art": "assets/cover_midnight_blur.jpeg",
+            "versions": [
+                { "name": "Ver 1 (chirp-crow)", "file": "assets/midnight_blur_v1_dfd6.mp3" },
+                { "name": "Ver 2 (chirp-crow)", "file": "assets/midnight_blur_v2_1794.mp3" }
             ]
+        }
+    ]
         }
 ]
 };
