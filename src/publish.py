@@ -89,8 +89,12 @@ def update_content_js(new_track_data):
 def download_file(url, filename):
     filepath = os.path.join(ASSETS_DIR, filename)
     print(f"⬇️ Downloading {filename}...")
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "Referer": "https://suno.com/"
+    }
     try:
-        r = requests.get(url, stream=True)
+        r = requests.get(url, headers=headers, stream=True)
         if r.status_code == 200:
             with open(filepath, 'wb') as f:
                 for chunk in r.iter_content(chunk_size=8192):
@@ -146,7 +150,11 @@ def main():
     for i, clip in enumerate(clips):
         # Audio
         fname = f"{safe_title}_v{i+1}_{clip['id'][:4]}.mp3"
-        audio_path = download_file(clip['audioUrl'], fname)
+        url = clip.get('audioUrl') or clip.get('streamAudioUrl')
+        if not url:
+            print(f"❌ No audio URL for clip {i+1}")
+            continue
+        audio_path = download_file(url, fname)
         
         if audio_path:
             versions.append({
