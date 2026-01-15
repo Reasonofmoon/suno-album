@@ -231,6 +231,17 @@ Yeah, the silence pulls me away`,
                 { "name": "Ver 2 (chirp-crow)", "file": "assets/fluorescent_dreams_v2_ddc6.mp3" }
             ]
         }
+,
+        {
+            "id": "b122eb2c719ff6dad46fdb34c0ed12e3",
+            "title": "Ghost in the Wireframe",
+            "lyrics": `{"error": "403 Your API key was reported as leaked. Please use another API key."}`,
+            "art": "None",
+            "versions": [
+                { "name": "Ver 1 (chirp-crow)", "file": "assets/ghost_in_the_wireframe_v1_fd73.mp3" },
+                { "name": "Ver 2 (chirp-crow)", "file": "assets/ghost_in_the_wireframe_v2_594a.mp3" }
+            ]
+        }
     ]
         }
 ]
