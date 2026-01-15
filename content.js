@@ -253,6 +253,17 @@ Yeah, the silence pulls me away`,
                 { "name": "Ver 2 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_white_noise_v2_74a7.mp3" }
             ]
         }
+,
+        {
+            "id": "e6801a27d877c4e60ae4fd3e449603d1",
+            "title": "Plateau: Sleepless Night - Lonely Satellite",
+            "lyrics": `{"error": "403 Your API key was reported as leaked. Please use another API key."}`,
+            "art": "assets/cover_plateau_sleepless_night_-_lonely_satellite.jpeg",
+            "versions": [
+                { "name": "Ver 1 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_lonely_satellite_v1_0c50.mp3" },
+                { "name": "Ver 2 (chirp-crow)", "file": "assets/plateau_sleepless_night_-_lonely_satellite_v2_f5a2.mp3" }
+            ]
+        }
     ]
         }
 ]
