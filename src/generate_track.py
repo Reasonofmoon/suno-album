@@ -17,7 +17,9 @@ except FileNotFoundError:
     print("❌ 'next_track.json' not found. Please run 'src/compose.py' first.")
     exit(1)
 
-API_KEY = "d38063ca1110014b3e5fc55b7a09c5a6"
+API_KEY = os.getenv("SUNO_COOKIE")
+if not API_KEY:
+    print("⚠️ Warning: SUNO_COOKIE not found in environment. Client might fail if auth is required.")
 
 def main():
     print(f"🚀 Starting Generation for: {TRACK_TITLE}")

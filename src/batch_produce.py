@@ -28,7 +28,7 @@ def main():
     print("🚀 Starting Batch Production: 10 Tracks (Sleepless Night)")
     
     for i, topic in enumerate(TOPICS):
-        if i == 0: continue # Skip first track (already done)
+        if i < 6: continue # Skip first 6 tracks (already done)
         print(f"\n==========================================")
         print(f"💿 Track {i+1}/10: {topic}")
         print(f"==========================================")

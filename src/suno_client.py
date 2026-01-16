@@ -5,7 +5,9 @@ import json
 import os
 
 API_BASE_URL = "https://api.sunoapi.org/api/v1"
-API_KEY = "d38063ca1110014b3e5fc55b7a09c5a6"  # Hardcoded as per user implementation, usually better in env var
+API_KEY = os.getenv("SUNO_COOKIE")
+if not API_KEY:
+    print("⚠️ Warning: SUNO_COOKIE environment variable not set.")
 
 class SunoClient:
     def __init__(self, api_key=None):

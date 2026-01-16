@@ -220,7 +220,7 @@ def main():
         "id": task_id,
         "title": title,
         "lyrics": lyrics,
-        "art": art_path,
+        "art": f"{BASE_URL}{art_filename}",
         "versions": versions
     }
     

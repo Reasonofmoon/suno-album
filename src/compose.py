@@ -5,8 +5,18 @@ import json
 import google.generativeai as genai
 from agents.prompts import SYSTEM_ARCHITECT, SYSTEM_SONIC, SYSTEM_LYRICIST
 
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
 # Configuration
-API_KEY = "AIzaSyC7zXTr2IsmwCEPC3lej1Uh2hQmF-hEfDs"
+API_KEY = os.getenv("GEMINI_API_KEY")
+if not API_KEY:
+    print("❌ ERROR: GEMINI_API_KEY not found in environment variables.")
+    print("   Please create a .env file with GEMINI_API_KEY=your_key_here")
+    sys.exit(1)
+
 # Using a high-quality model for reasoning/lyrics and a fast one for technicals if needed.
 # Converting user request "Gemini 3 Pro / Flash Preview" to likely valid SDK strings.
 MODEL_NAME = "gemini-2.5-pro"
