@@ -3,6 +3,9 @@ import requests
 import time
 import json
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 API_BASE_URL = "https://api.sunoapi.org/api/v1"
 API_KEY = os.getenv("SUNO_COOKIE")

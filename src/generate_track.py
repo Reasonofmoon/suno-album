@@ -4,6 +4,9 @@ from system_prompts import MUSIC_STYLE_TAGS
 import time
 import json
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Load Track Data
 try:
