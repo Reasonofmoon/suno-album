@@ -5,89 +5,50 @@ import os
 import re
 import requests
 from suno_client import SunoClient
+from mutagen.mp3 import MP3
+from mutagen.id3 import ID3, APIC, TIT2, TPE1, TALB, USLT, error
 
 # Configuration
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CONTENT_FILE = os.path.join(PROJECT_ROOT, "content.js")
+DATA_FILE = os.path.join(PROJECT_ROOT, "assets", "discography.json")
 ASSETS_DIR = os.path.join(PROJECT_ROOT, "assets")
-BASE_URL = "assets/" # URL used in content.js for the player
+BASE_URL = "assets/"
 
 def clean_filename(title):
     return re.sub(r'[\\/*?:"<>|]', "", title).replace(" ", "_").lower()
 
-def update_content_js(new_track_data):
+def update_discography_json(new_track_data, album_id="album_1"):
     """
-    Updates content.js with the new track data.
+    Updates discography.json with the new track data for the specified album.
     """
-    with open(CONTENT_FILE, 'r', encoding='utf-8') as f:
-        content = f.read()
-
-    # Find the injection point (end of tracks array)
-    # Looking for the last closing bracket of the tracks array
-    # We assume 'tracks': [ ... ] structure
-    
-    # Strategy: Load the JS object as JSON (skipping the assignment)
-    # Then dump back to JS format.
-    
-    # 1. Extract JSON part
-    start_idx = content.find('{')
-    json_str = content[start_idx:content.rfind(';')]
-    
-    # JavaScript object keys often aren't quoted, and it uses backticks for lyrics.
-    # Python's json parser won't like that.
-    # So we will do a text insertion instead.
-    
-    # Construct the JS string for the new track
-    new_track_js = json.dumps(new_track_data, indent=8)
-    # Fix lyrics quotes to backticks for multiline support
-    # (JSON dump escapes newlines as \n, we want literal newlines with backticks)
-    lyrics_json_str = json.dumps(new_track_data['lyrics'])
-    lyrics_literal = "`" + new_track_data['lyrics'].replace("`", "\`") + "`"
-    
-    # Replace the lyrics line in the JSON string
-    # We look for "lyrics": "..." and replace with "lyrics": `...`
-    # Note: json.dumps escapes control characters.
-    
-    # Simpler approach: Just construct the string manually
-    versions_str = ",\n                ".join([
-        f'{{ "name": "{v["name"]}", "file": "{v["file"]}" }}' for v in new_track_data['versions']
-    ])
-    
-    track_entry = f"""
-        {{
-            "id": "{new_track_data['id']}",
-            "title": "{new_track_data['title']}",
-            "lyrics": `{new_track_data['lyrics']}`,
-            "art": "{new_track_data['art']}",
-            "versions": [
-                {versions_str}
-            ]
-        }}"""
-
-    # Insert before the last closing bracket/brace sequence of the tracks array
-    # We look for the closing of the tracks array `    ]`
-    insert_pos = content.rfind('    ]')
-    
-    if insert_pos == -1:
-        # Fallback for empty or minified
-        insert_pos = content.rfind(']')
-    
-    if insert_pos == -1:
-        print("❌ Could not find tracks array end in content.js")
+    if not os.path.exists(DATA_FILE):
+        print(f"❌ Error: {DATA_FILE} not found.")
         return
 
-    # specific check to add a comma if it's not the first item
-    prefix = "," if "tracks: [" not in content[insert_pos-20:insert_pos] else ""
-    
-    new_content = content[:insert_pos] + prefix + track_entry + "\n" + content[insert_pos:]
-    
-    with open(CONTENT_FILE, 'w', encoding='utf-8') as f:
-        f.write(new_content)
-    
-    print("✅ content.js updated successfully.")
+    try:
+        with open(DATA_FILE, 'r', encoding='utf-8') as f:
+            discography = json.load(f)
+    except json.JSONDecodeError as e:
+        print(f"❌ Error decoding JSON: {e}")
+        return
 
-from mutagen.mp3 import MP3
-from mutagen.id3 import ID3, APIC, TIT2, TPE1, TALB, USLT, error
+    # Find the album
+    album_found = False
+    for album in discography:
+        if album['id'] == album_id:
+            album['tracks'].append(new_track_data)
+            album_found = True
+            break
+    
+    if not album_found:
+        print(f"❌ Album '{album_id}' not found in discography.")
+        return
+
+    # Write back
+    with open(DATA_FILE, 'w', encoding='utf-8') as f:
+        json.dump(discography, f, indent=4, ensure_ascii=False)
+    
+    print(f"✅ discography.json updated successfully for {album_id}.")
 
 def tag_mp3(audio_path, title, artist, album, art_path, lyrics=""):
     """
@@ -117,9 +78,9 @@ def tag_mp3(audio_path, title, artist, album, art_path, lyrics=""):
             with open(art_path, 'rb') as albumart:
                 audio.tags.add(
                     APIC(
-                        encoding=3, # 3 is for utf-8
-                        mime='image/jpeg', # image/jpeg or image/png
-                        type=3, # 3 is for the cover image
+                        encoding=3, 
+                        mime='image/jpeg', 
+                        type=3, 
                         desc=u'Cover',
                         data=albumart.read()
                     )
@@ -132,10 +93,11 @@ def tag_mp3(audio_path, title, artist, album, art_path, lyrics=""):
 
 def download_file(url, filename):
     filepath = os.path.join(ASSETS_DIR, filename)
+    # Check if file exists to avoid redownload? 
+    # But usually we overwrite for updates.
     print(f"⬇️ Downloading {filename}...")
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-        "Referer": "https://suno.com/"
+        "User-Agent": "Mozilla/5.0"
     }
     try:
         r = requests.get(url, headers=headers, stream=True)
@@ -144,7 +106,7 @@ def download_file(url, filename):
                 for chunk in r.iter_content(chunk_size=8192):
                     f.write(chunk)
             print(f"   Saved to {filepath}")
-            return filepath # Return absolute path for tagging
+            return filepath
         else:
             print(f"❌ Failed download: {r.status_code}")
             return None
@@ -154,27 +116,42 @@ def download_file(url, filename):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python src/publish.py <TASK_ID>")
+        print("Usage: python src/publish.py <TASK_ID> [ALBUM_ID]")
         return
 
     task_id = sys.argv[1]
+    album_id = sys.argv[2] if len(sys.argv) > 2 else "album_1"
+    
+    # Map IDs to Album Names for tagging
+    album_names = {
+        "album_1": "A Thousand Plateaus",
+        "album_2": "Office Serendipity"
+    }
+    album_title = album_names.get(album_id, "Reason Moon Album")
+
     client = SunoClient()
     
-    print(f"🔎 Fetching Task: {task_id}")
+    print(f"🔎 Fetching Task: {task_id} for {album_id}")
     status = client.get_generation_status(task_id)
     
     if not status:
         print("❌ Failed to get status.")
         return
 
-    # Parse Data
-    import pprint
-    pprint.pprint(status)
+    # Parse Data logic (same as before)
     try:
-        clips = status['data']['response']['sunoData']
-    except KeyError:
-        print("❌ Unexpected JSON structure.")
-        return
+        if 'sunoData' in status['data']['response']:
+             clips = status['data']['response']['sunoData']
+        elif isinstance(status['data'], list):
+             clips = status['data']
+        else:
+             clips = [status['data']] 
+    except KeyError as e:
+        if isinstance(status, list):
+            clips = status
+        else:
+            print(f"❌ Unexpected JSON structure: {e}")
+            return
 
     if not clips:
         print("❌ No clips found.")
@@ -183,50 +160,49 @@ def main():
     # Assume all clips belong to same "Track Concept"
     base_clip = clips[0]
     title = base_clip.get('title', 'Unknown Track')
-    lyrics = base_clip.get('prompt', '')
+    lyrics = base_clip.get('prompt', '') or base_clip.get('metadata', {}).get('prompt', '')
     safe_title = clean_filename(title)
     
-    # Download Art (from first clip)
+    # Download Art
     art_filename = f"cover_{safe_title}.jpeg"
-    art_path = download_file(base_clip['imageUrl'], art_filename)
+    # Fallback art if missing
+    image_url = base_clip.get('imageUrl')
+    if image_url:
+        art_path = download_file(image_url, art_filename)
+        art_web_path = f"{BASE_URL}{art_filename}"
+    else:
+        print("⚠️ No image URL found. Using default.")
+        art_path = None
+        art_web_path = "assets/cover_sketch.png"
 
     versions = []
     for i, clip in enumerate(clips):
-        # Audio
         fname = f"{safe_title}_v{i+1}_{clip['id'][:4]}.mp3"
         url = clip.get('audioUrl') or clip.get('streamAudioUrl')
-        if not url:
-            print(f"❌ No audio URL for clip {i+1}")
-            continue
-        audio_path = download_file(url, fname)
+        if not url: continue
         
+        audio_path = download_file(url, fname)
         if audio_path:
-            # Tag the MP3
-            tag_mp3(audio_path, title, "Reason Moon", "A Thousand Plateaus", art_path, lyrics)
-            
-            # Use relative path for content.js
-            rel_path = f"assets/{fname}"
+            tag_mp3(audio_path, title, "Reason Moon", album_title, art_path, lyrics)
             versions.append({
                 "name": f"Ver {i+1} ({clip.get('modelName', 'V5')})",
-                "file": rel_path
+                "file": f"{BASE_URL}{fname}"
             })
 
     if not versions:
         print("❌ No audio files downloaded.")
         return
 
-    # Construct Data Object
     new_track = {
         "id": task_id,
         "title": title,
         "lyrics": lyrics,
-        "art": f"{BASE_URL}{art_filename}",
+        "art": art_web_path,
         "versions": versions
     }
     
-    # Update JS
-    update_content_js(new_track)
-    print("\n🎉 Publishing Complete! Open index.html to view.")
+    update_discography_json(new_track, album_id)
+    print("\n🎉 Publishing Complete! (JSON Updated)")
 
 if __name__ == "__main__":
     main()

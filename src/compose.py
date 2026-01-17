@@ -42,14 +42,19 @@ def call_agent(system_prompt, user_input):
 def main():
     if len(sys.argv) < 2:
         target_topic = "Nomadology"
+        extra_instruction = ""
     else:
         target_topic = sys.argv[1]
+        extra_instruction = sys.argv[2] if len(sys.argv) > 2 else ""
 
     print(f"🎨 Composition Started: '{target_topic}' via Gemini")
+    if extra_instruction:
+        print(f"   ℹ️  Instruction: {extra_instruction}")
     
     # 1. ARCHITECT
     print("   🧠 Architect (Gemini) is thinking...")
-    concept_str = call_agent(SYSTEM_ARCHITECT, f"Topic: {target_topic}. Return ONLY valid JSON.")
+    architect_prompt = f"Topic: {target_topic}. {extra_instruction} Return ONLY valid JSON."
+    concept_str = call_agent(SYSTEM_ARCHITECT, architect_prompt)
     
     if not concept_str or "error" in concept_str:
         print("   ⚠️ Architect failed. Using fallback.")
@@ -66,7 +71,7 @@ def main():
 
     # 2. SONIC SCULPTOR (Style)
     print("   🎛️ Sonic Sculptor is designing...")
-    sonic_input = f"Concept: {json.dumps(concept)}. Return ONLY valid JSON."
+    sonic_input = f"Concept: {json.dumps(concept)}. {extra_instruction} Return ONLY valid JSON."
     style_str = call_agent(SYSTEM_SONIC, sonic_input)
     style_str = style_str.replace("```json", "").replace("```", "").strip()
     
@@ -80,7 +85,7 @@ def main():
 
     # 3. LYRICIST (Lyrics)
     print("   ✍️  Lyricist is writing...")
-    lyric_input = f"Concept: {json.dumps(concept)}\nStyle: {json.dumps(style_data) if 'style_data' in locals() else style_tags}"
+    lyric_input = f"Concept: {json.dumps(concept)}\nStyle: {json.dumps(style_data) if 'style_data' in locals() else style_tags}\nInstruction: {extra_instruction}"
     lyrics = call_agent(SYSTEM_LYRICIST, lyric_input)
     
     # 4. Save Output
