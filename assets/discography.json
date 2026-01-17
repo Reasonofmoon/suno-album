@@ -452,6 +452,22 @@
                         "file": "assets/smart_ai_helper_(똑똑한_막내직원)_v2_449c.mp3"
                     }
                 ]
+            },
+            {
+                "id": "78fb50f386453e3609e765a3997ac721",
+                "title": "ZeroPay Romance (제로페이 로맨스)",
+                "lyrics": "[Verse]\n지갑을 두고 왔어 당황하지 말아요\n그대 폰을 꺼내요 QR을 비춰봐요\n띠링~ 하는 소리에 내 마음도 결제됐어\n10% 할인보다 더 큰 설렘이 와\n\n[Chorus]\nZeroPay Love, 우리 사랑은 수수료 0원\n온누리 상품권으로 행복을 충전해\n스마트한 결제로 알뜰한 데이트\n구매탄에서 시작된 짠내 나는 로맨스",
+                "art": "assets/cover_zeropay_romance_(제로페이_로맨스).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/zeropay_romance_(제로페이_로맨스)_v1_0d9d.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/zeropay_romance_(제로페이_로맨스)_v2_bb3d.mp3"
+                    }
+                ]
             }
         ]
     }
