@@ -468,6 +468,22 @@
                         "file": "assets/zeropay_romance_(제로페이_로맨스)_v2_bb3d.mp3"
                     }
                 ]
+            },
+            {
+                "id": "8344dd6d24036f1b5a379a007ac1ac32",
+                "title": "Young Chef's Table (청년 셰프의 식탁)",
+                "lyrics": "[Verse]\n전통시장 한구석 힙한 냄새 나는 곳\n파스타와 전이 만나 퓨전을 이루네\n젊은 피가 끓어올라 열정이 타올라\n구매탄의 새로운 맛을 보여줄게\n\n[Chorus]\nYoung Chef's Table, Old & New의 조화\n맛에는 국경 없고 세대 차이도 없어\n할머니도 엄지 척, MZ들도 좋아요\n우리가 만드는 맛있는 콜라보레이션",
+                "art": "assets/cover_young_chef's_table_(청년_셰프의_식탁).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/young_chef's_table_(청년_셰프의_식탁)_v1_2274.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/young_chef's_table_(청년_셰프의_식탁)_v2_524c.mp3"
+                    }
+                ]
             }
         ]
     }
