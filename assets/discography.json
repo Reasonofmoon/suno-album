@@ -372,6 +372,22 @@
                         "file": "assets/welcome_to_gumaetan_(어서오세요_구매탄)_v2_f3cb.mp3"
                     }
                 ]
+            },
+            {
+                "id": "4a1701ec87753aa89d95cac9ff62df5f",
+                "title": "Mama's Banchan 304 (304호 엄마손맛)",
+                "lyrics": "[Verse]\n304호 문을 열면 고소한 참기름 향기\n집 나간 입맛도 돌아오게 만든다는 그 전설\n달걀말이 멸치볶음 파김치 갓김치\n엄마가 해준 것보다 조금 더 맛있어 (쉿!비밀이야)\n\n[Chorus]\n304호 엄마손맛, 밥도둑이 따로 없네\n오늘 저녁 고민 말고 그냥 여기 와서 골라\n따뜻한 밥 한 공기 뚝딱 비우게 만드는\n마법의 304호 영원하라",
+                "art": "assets/cover_mama's_banchan_304_(304호_엄마손맛).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/mama's_banchan_304_(304호_엄마손맛)_v1_f6a0.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/mama's_banchan_304_(304호_엄마손맛)_v2_4abf.mp3"
+                    }
+                ]
             }
         ]
     }
