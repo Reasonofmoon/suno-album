@@ -500,6 +500,22 @@
                         "file": "assets/delivery_hero_(배달의_용사)_v2_0646.mp3"
                     }
                 ]
+            },
+            {
+                "id": "5f9922134b64570a456d44da1b54c468",
+                "title": "See You Again (다음에 또 봐요)",
+                "lyrics": "[Verse]\n양손 가득 장바구니 마음 가득 행복을\n돌아가는 뒷모습이 참 아름답네요\n오늘 하루 우리 시장 찾아주셔서 감사해요\n그대의 웃음 덕분에 우리가 살아요\n\n[Chorus]\n안녕은 영원한 헤어짐은 아니겠지요\n내일 또 만나요 싱싱한 얼굴로\n언제나 이 자리에 변함없이 서 있을게\n구매탄의 문은 활짝 열려 있으니까",
+                "art": "assets/cover_see_you_again_(다음에_또_봐요).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/see_you_again_(다음에_또_봐요)_v1_762c.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/see_you_again_(다음에_또_봐요)_v2_4404.mp3"
+                    }
+                ]
             }
         ]
     }
