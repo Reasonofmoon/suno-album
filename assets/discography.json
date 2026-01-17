@@ -1,4 +1,4 @@
-﻿[
+[
     {
         "id": "album_1",
         "title": "A Thousand Plateaus",
@@ -188,6 +188,167 @@
         "title": "Office Serendipity",
         "artist": "Reason Moon",
         "cover_art": "assets/cover_office_serendipity.png",
-        "tracks": []
+        "tracks": [
+            {
+                "id": "track_morning_coffee_(아침_커피)",
+                "title": "Morning Coffee (아침 커피)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_morning_coffee_(아침_커피).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/morning_coffee_(아침_커피)_v1_9825.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/morning_coffee_(아침_커피)_v2_dc71.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_meeting_finished_(회의_끝)",
+                "title": "Meeting Finished (회의 끝)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_meeting_finished_(회의_끝).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/meeting_finished_(회의_끝)_v1_b416.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/meeting_finished_(회의_끝)_v2_9518.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_lunch_walk_(점심_산책)",
+                "title": "Lunch Walk (점심 산책)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_lunch_walk_(점심_산책).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/lunch_walk_(점심_산책)_v1_2545.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/lunch_walk_(점심_산책)_v2_2152.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_focus_mode_(집중_모드)",
+                "title": "Focus Mode (집중 모드)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_focus_mode_(집중_모드).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/focus_mode_(집중_모드)_v1_0da2.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/focus_mode_(집중_모드)_v2_d6e8.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_sunset_window_(창가_노을)",
+                "title": "Sunset Window (창가 노을)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_sunset_window_(창가_노을).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/sunset_window_(창가_노을)_v1_b481.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/sunset_window_(창가_노을)_v2_d3df.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_late_night_office_(야근의_미학)",
+                "title": "Late Night Office (야근의 미학)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_late_night_office_(야근의_미학).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/late_night_office_(야근의_미학)_v1_74f0.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/late_night_office_(야근의_미학)_v2_aece.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_way_home_(퇴근길)",
+                "title": "Way Home (퇴근길)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_way_home_(퇴근길).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/way_home_(퇴근길)_v1_e9f1.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/way_home_(퇴근길)_v2_5b53.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_sunday_night_prep_(일요일_밤의_다짐)",
+                "title": "Sunday Night Prep (일요일 밤의 다짐)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_sunday_night_prep_(일요일_밤의_다짐).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/sunday_night_prep_(일요일_밤의_다짐)_v1_7d4b.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/sunday_night_prep_(일요일_밤의_다짐)_v2_a34f.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_brainstorming_(브레인스토밍)",
+                "title": "Brainstorming (브레인스토밍)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_brainstorming_(브레인스토밍).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/brainstorming_(브레인스토밍)_v1_444e.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/brainstorming_(브레인스토밍)_v2_1d50.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_keyboard_rhythm_(키보드_리듬)",
+                "title": "Keyboard Rhythm (키보드 리듬)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_keyboard_rhythm_(키보드_리듬).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/keyboard_rhythm_(키보드_리듬)_v1_2925.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/keyboard_rhythm_(키보드_리듬)_v2_6e2c.mp3"
+                    }
+                ]
+            }
+        ]
     }
 ]
