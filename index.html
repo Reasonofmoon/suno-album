@@ -248,15 +248,24 @@
                     <span id="dur-time">0:00</span>
                 </div>
             </div>
-            <div style="width:30%"></div>
+            <div style="width:30%; display:flex; justify-content: flex-end; gap: 10px;">
+                <select id="viz-select" style="background:#333; color:#fff; border:none; padding:4px; border-radius:4px;">
+                    <option value="ocean">Ocean</option>
+                    <option value="bars">Bars</option>
+                    <option value="circle">Circle</option>
+                    <option value="none">Off</option>
+                </select>
+            </div>
         </div>
     </div>
 
-    <audio id="audio-player"></audio>
+    <audio id="audio-player" crossorigin="anonymous"></audio>
+    <canvas id="viz-canvas" style="position: absolute; top:0; left:320px; width: calc(100% - 320px); height: calc(100% - 90px); pointer-events: none; z-index: 0; opacity: 0.6; mix-blend-mode: screen;"></canvas>
     
     <!-- Load Data -->
     <!-- Load Data via Fetch -->
     <!-- <script src="content.js"></script> Deprecated -->
+    <script src="assets/visualizer.js"></script>
 
     <script>
         // State
@@ -408,7 +417,31 @@
             }
         }
 
+        let audioCtx;
+        let analyser;
+        let source;
+
+        function initAudioContext() {
+            if (audioCtx) return;
+            const AudioContext = window.AudioContext || window.webkitAudioContext;
+            audioCtx = new AudioContext();
+            analyser = audioCtx.createAnalyser();
+            analyser.fftSize = 256; // Good balance
+            
+            source = audioCtx.createMediaElementSource(audio);
+            source.connect(analyser);
+            analyser.connect(audioCtx.destination);
+            
+            // Start Viz
+            const canvas = document.getElementById('viz-canvas');
+            Visualizer.init(canvas, analyser);
+        }
+
         function playAudio() {
+            initAudioContext();
+            if (audioCtx && audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
             audio.play().catch(e => console.log("Play failed (user interaction needed):", e));
             isPlaying = true;
             playBtn.textContent = '⏸';
@@ -457,6 +490,16 @@
         
         audio.addEventListener('ended', () => {
              nextTrack(); 
+        });
+
+        document.getElementById('viz-select').addEventListener('change', (e) => {
+            const val = e.target.value;
+            if (val === 'none') {
+                document.getElementById('viz-canvas').style.display = 'none';
+            } else {
+                document.getElementById('viz-canvas').style.display = 'block';
+                Visualizer.setType(val);
+            }
         });
 
         seekSlider.addEventListener('input', () => {
