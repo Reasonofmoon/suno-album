@@ -484,6 +484,22 @@
                         "file": "assets/young_chef's_table_(청년_셰프의_식탁)_v2_524c.mp3"
                     }
                 ]
+            },
+            {
+                "id": "431c10cd2d888a0cc1ec069a1216cc1e",
+                "title": "Delivery Hero (배달의 용사)",
+                "lyrics": "[Verse]\n오토바이 시동 걸고 바람을 가른다\n신선함을 싣고서 너에게 달려가\n식기 전에 도착해 뜨거울 때 맛봐야 해\n시장의 맛 그대로 집 앞까지 슛 골인\n\n[Chorus]\nRun Run Delivery Hero, 멈추지 않아\n비가 와도 눈이 와도 구매탄은 달려\n편리함과 신선함 두 마리 토끼 잡고\n오늘 저녁 식탁을 완벽하게 지켜내",
+                "art": "assets/cover_delivery_hero_(배달의_용사).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/delivery_hero_(배달의_용사)_v1_1c73.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/delivery_hero_(배달의_용사)_v2_0646.mp3"
+                    }
+                ]
             }
         ]
     }
