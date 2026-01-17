@@ -404,6 +404,22 @@
                         "file": "assets/spicy_love_tteokbokki_(매콤달콤_떡볶이)_v2_0cf4.mp3"
                     }
                 ]
+            },
+            {
+                "id": "ccc66c8e31805a96c55d3972f2515a78",
+                "title": "Bonus Heart Attack (덤주세요 심쿵)",
+                "lyrics": "[Verse]\n콩나물 천 원어치 샀는데 한 줌 더\n사과 한 봉지 샀는데 귤이 하나 쏙\n사장님 이러시면 남는 게 있나요?\n제 마음을 훔치시면 신고할 거예요 (혼인신고)\n\n[Chorus]\n덤 덤 덤 덤 Give me more\n정이 넘쳐 흘러서 감당이 안 돼\n이 맛에 시장 오지 딴 데는 못 가지\n구매탄의 인심은 국가대표 급이야",
+                "art": "assets/cover_bonus_heart_attack_(덤주세요_심쿵).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/bonus_heart_attack_(덤주세요_심쿵)_v1_12bd.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/bonus_heart_attack_(덤주세요_심쿵)_v2_305d.mp3"
+                    }
+                ]
             }
         ]
     }
