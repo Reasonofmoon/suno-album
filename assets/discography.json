@@ -350,5 +350,29 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "album_3",
+        "title": "Gumaetan Market Vol. 3",
+        "artist": "Reason Moon",
+        "cover_art": "assets/cover_sketch.png",
+        "tracks": [
+            {
+                "id": "42427fcdce7ac86137cea5d51c6e9da7",
+                "title": "Welcome to Gumaetan (어서오세요 구매탄)",
+                "lyrics": "[Intro]\n(Electronic Horns)\n둠칫 둠칫 두둠칫!\n여기가 어디라고?\n수원의 핫플레이스!\n\n[Verse]\n백화점은 멀고 마트는 식상해\n슬리퍼 신고 나와봐요 당장 나와봐요\n없는 거 빼고 다 있는 보물창고\n사람 냄새 폴폴 나는 우리 동네 1번지\n\n[Chorus]\n어서오세요 구매탄! 여기는 꿀맛탄!\n지갑은 가볍게 양손은 무겁게\n할머니의 덤이 쏟아지는 기적의 장터\n구매탄으로 오세요~ (Hey!)",
+                "art": "assets/cover_welcome_to_gumaetan_(어서오세요_구매탄).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/welcome_to_gumaetan_(어서오세요_구매탄)_v1_c6d1.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/welcome_to_gumaetan_(어서오세요_구매탄)_v2_f3cb.mp3"
+                    }
+                ]
+            }
+        ]
     }
 ]
