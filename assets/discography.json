@@ -388,6 +388,22 @@
                         "file": "assets/mama's_banchan_304_(304호_엄마손맛)_v2_4abf.mp3"
                     }
                 ]
+            },
+            {
+                "id": "c85aa691324b458d1110ec3031306765",
+                "title": "Spicy Love Tteokbokki (매콤달콤 떡볶이)",
+                "lyrics": "[Verse]\n빨간 맛이 유혹해 보글보글 끓는 소리\n스트레스 쌓인 날엔 너밖에 생각 안 나\n말랑말랑 떡 하나 오뎅 하나 찍어서\n입안 가득 넣으면 불꽃놀이 팡팡팡\n\n[Chorus]\n매콤달콤 Tteokbokki, Falling in love\n눈물 콧물 쏙 빼도 자꾸만 손이 가\n튀김 순대 친구들도 다 같이 불러모아\n구매탄 분식 파티 Tonight!",
+                "art": "assets/cover_spicy_love_tteokbokki_(매콤달콤_떡볶이).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/spicy_love_tteokbokki_(매콤달콤_떡볶이)_v1_ab6b.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/spicy_love_tteokbokki_(매콤달콤_떡볶이)_v2_0cf4.mp3"
+                    }
+                ]
             }
         ]
     }
