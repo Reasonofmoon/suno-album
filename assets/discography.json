@@ -420,6 +420,22 @@
                         "file": "assets/bonus_heart_attack_(덤주세요_심쿵)_v2_305d.mp3"
                     }
                 ]
+            },
+            {
+                "id": "bdb034c1fc4dbb62d5dfe953c9d65205",
+                "title": "Friday Night Dokkaebi (금요 야시장 도깨비)",
+                "lyrics": "[Verse]\n해가 지면 켜지는 알록달록 전구들\n낮보다 화려한 밤이 깨어나네\n지글지글 빈대떡 냄새가 리듬을 타\n퇴근길 발걸음을 멈추게 하는 마법\n\n[Chorus]\nFriday Night in Gumaetan, 우리만의 축제\n닭강정 한 손에 맥주 한 캔 들고서\n이 밤을 불태워 걱정은 내일 해\n야시장의 도깨비가 춤을 추는 시간",
+                "art": "assets/cover_friday_night_dokkaebi_(금요_야시장_도깨비).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/friday_night_dokkaebi_(금요_야시장_도깨비)_v1_9de5.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/friday_night_dokkaebi_(금요_야시장_도깨비)_v2_2659.mp3"
+                    }
+                ]
             }
         ]
     }
