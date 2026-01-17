@@ -436,6 +436,22 @@
                         "file": "assets/friday_night_dokkaebi_(금요_야시장_도깨비)_v2_2659.mp3"
                     }
                 ]
+            },
+            {
+                "id": "17256e6c7ea3d57509b3adf90f0e9b67",
+                "title": "Smart AI Helper (똑똑한 막내직원)",
+                "lyrics": "[Verse]\n어서옵쇼 손님 여러분 제가 누군지 아시나요\n사장님 대신 노래하고 그림 그리는 AI\n로고송은 1분 컷, 포스터는 3초 컷\n월급은 0원인데 일처리는 백만 불\n\n[Chorus]\n나는야 똑똑한 디지털 막내 (삐리삐리)\n구매탄의 미래를 책임질 슈퍼 루키\n사장님은 웃기만 해, 일은 내가 다 할게\nAI와 함께하는 스마트한 시장통",
+                "art": "assets/cover_smart_ai_helper_(똑똑한_막내직원).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/smart_ai_helper_(똑똑한_막내직원)_v1_c2b5.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/smart_ai_helper_(똑똑한_막내직원)_v2_449c.mp3"
+                    }
+                ]
             }
         ]
     }
