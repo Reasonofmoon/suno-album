@@ -126,7 +126,8 @@ def main():
     album_names = {
         "album_1": "A Thousand Plateaus",
         "album_2": "Office Serendipity",
-        "album_3": "Gumaetan Market Vol. 3"
+        "album_3": "Gumaetan Market Vol. 3",
+        "album_4": "Curiosity"
     }
     album_title = album_names.get(album_id, "Reason Moon Album")
 

@@ -518,5 +518,29 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "album_4",
+        "title": "Curiosity",
+        "artist": "Reason Moon",
+        "cover_art": "assets/cover_sketch.png",
+        "tracks": [
+            {
+                "id": "354fe9cd145eb0e0f19b4bac54f90b81",
+                "title": "Quantum Dreams (양자의 꿈)",
+                "lyrics": "[Verse 1]\nClose your eyes and fall through the static\nEvery atom hums a lullaby\nParallel worlds behind my eyelids\nSchrodinger's cat is purring by my side\n\n[Chorus]\nQuantum dreams, where nothing is certain\nEvery possibility blooms at once\nI'm the wave and I'm the particle\nDancing between what is and what was\n\n[Verse 2]\nProbability clouds like morning fog\nCollapsing when I try to look too close\nThe universe observes itself through me\nAnd I observe it back, a cosmic ghost\n\n[Chorus]\nQuantum dreams, where nothing is certain\nEvery possibility blooms at once\nI'm the wave and I'm the particle\nDancing between what is and what was\n\n[Outro]\nEntangled... with everything... with nothing...\nThe dream doesn't end, it just... superposes...",
+                "art": "assets/cover_quantum_dreams_(양자의_꿈).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/quantum_dreams_(양자의_꿈)_v1_bafd.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/quantum_dreams_(양자의_꿈)_v2_8eff.mp3"
+                    }
+                ]
+            }
+        ]
     }
 ]
