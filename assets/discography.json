@@ -604,6 +604,22 @@
                         "file": "assets/fermentation_(발효)_v2_6291.mp3"
                     }
                 ]
+            },
+            {
+                "id": "6567a3c01f3bbba1cf2e50fed717c40a",
+                "title": "The Telescope (망원경)",
+                "lyrics": "[Verse 1]\nI press my eye against the ancient glass\nThe universe expands inside my skull\nA billion years of light just to arrive\nAt this exact moment, beautiful and full\n\n[Chorus]\nThrough the telescope I see\nEverything that used to be\nLight that traveled just for me\nA love letter from eternity\n\n[Verse 2]\nGalaxies like fingerprints of God\nNebulas like watercolor tears\nEvery star a story being told\nTo anyone with curiosity and ears\n\n[Chorus]\nThrough the telescope I see\nEverything that used to be\nLight that traveled just for me\nA love letter from eternity\n\n[Outro]\nAnd I wonder... does something out there...\nhave a telescope... pointed back at me?",
+                "art": "assets/cover_the_telescope_(망원경).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/the_telescope_(망원경)_v1_be2a.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/the_telescope_(망원경)_v2_d8e3.mp3"
+                    }
+                ]
             }
         ]
     }
