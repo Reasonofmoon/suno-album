@@ -27,8 +27,9 @@ const Visualizer = {
 
     resize: function() {
         if (!this.canvas) return;
-        this.canvas.width = this.canvas.clientWidth;
-        this.canvas.height = this.canvas.clientHeight;
+        // Use window dimensions for fullscreen canvas, fallback to clientWidth
+        this.canvas.width = this.canvas.clientWidth || window.innerWidth;
+        this.canvas.height = this.canvas.clientHeight || window.innerHeight;
     },
 
     initParticles: function() {

@@ -45,22 +45,34 @@ const progressFill = document.getElementById('progress-fill');
 // === Web Audio + Visualizer Setup ===
 function initAudioContext() {
     if (audioCtx) return; // Already initialized
-    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    analyserNode = audioCtx.createAnalyser();
-    analyserNode.fftSize = 256;
-    analyserNode.smoothingTimeConstant = 0.8;
+    try {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        analyserNode = audioCtx.createAnalyser();
+        analyserNode.fftSize = 256;
+        analyserNode.smoothingTimeConstant = 0.8;
 
-    sourceNode = audioCtx.createMediaElementSource(audio);
-    sourceNode.connect(analyserNode);
-    analyserNode.connect(audioCtx.destination);
+        sourceNode = audioCtx.createMediaElementSource(audio);
+        sourceNode.connect(analyserNode);
+        analyserNode.connect(audioCtx.destination);
+        console.log('[Visualizer] AudioContext initialized successfully');
+    } catch (e) {
+        console.error('[Visualizer] AudioContext init failed:', e);
+        audioCtx = null;
+        analyserNode = null;
+    }
 }
 
 function initVisualizer() {
     if (visualizerInitialized) return;
     const canvas = document.getElementById('visualizer-canvas');
-    if (!canvas || !analyserNode) return;
+    if (!canvas || !analyserNode) {
+        console.warn('[Visualizer] Cannot init - canvas:', !!canvas, 'analyser:', !!analyserNode);
+        return;
+    }
+    console.log('[Visualizer] Initializing canvas:', canvas.clientWidth, 'x', canvas.clientHeight);
     Visualizer.init(canvas, analyserNode);
     visualizerInitialized = true;
+    console.log('[Visualizer] Started successfully, type:', Visualizer.visualizationType);
 }
 
 // === Init ===
