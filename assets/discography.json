@@ -588,6 +588,22 @@
                         "file": "assets/paper_labyrinth_(종이_미로)_v2_bb10.mp3"
                     }
                 ]
+            },
+            {
+                "id": "ca52232553f1858ca60cf93ed7831922",
+                "title": "Fermentation (발효)",
+                "lyrics": "[Intro]\nBubble. Burst. Transform.\nTime is the only ingredient.\n\n[Verse 1]\nPressure builds inside the clay jar\nMicrobes wage their invisible war\nWhat was sweet turns sharp, turns deep\nPatience is the harvest that we reap\n\n[Drop]\nFERMENT. TRANSFORM. DECAY. REBIRTH.\nBREAK DOWN TO BUILD UP.\nROT IS JUST ANOTHER WORD FOR GROWTH.\nGROWTH. GROWTH. GROWTH.\n\n[Verse 2]\nKimchi wisdom older than the kings\nTime converts the ordinary things\nGrapes to wine, and milk to cheese\nChaos into order by degrees\n\n[Spoken Word]\nThe most interesting things in the universe\nare the ones that had the patience\nto fall apart beautifully.\n\n[Drop]\nFERMENT. TRANSFORM. DECAY. REBIRTH.\nTHE CULTURE IS ALIVE.",
+                "art": "assets/cover_fermentation_(발효).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/fermentation_(발효)_v1_bb3c.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/fermentation_(발효)_v2_6291.mp3"
+                    }
+                ]
             }
         ]
     }
