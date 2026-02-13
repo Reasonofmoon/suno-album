@@ -540,6 +540,22 @@
                         "file": "assets/quantum_dreams_(양자의_꿈)_v2_8eff.mp3"
                     }
                 ]
+            },
+            {
+                "id": "1539bf51df479643bf930465c8fa5bfd",
+                "title": "Midnight Algorithm (한밤의 알고리즘)",
+                "lyrics": "[Verse 1]\nLines of code like poetry at 3 AM\nThe cursor blinks, a patient metronome\nCoffee cold but the logic's getting warm\nFinding patterns in the chaos, finding home\n\n[Chorus]\nMidnight algorithm, solve me if you can\nSort my scattered thoughts into a plan\nEvery bug's a question I forgot to ask\nEvery fix, a tiny, perfect dance\n\n[Verse 2]\nStack overflow of feelings left unread\nRecursive loops of memories compile\nThe program runs but who debugs the heart?\nControl-Z can't undo a thousand miles\n\n[Bridge]\nif (curiosity == true) { keep.going(); }\nelse { reboot(soul); }\n\n[Chorus]\nMidnight algorithm, solve me if you can\nSort my scattered thoughts into a plan",
+                "art": "assets/cover_midnight_algorithm_(한밤의_알고리즘).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/midnight_algorithm_(한밤의_알고리즘)_v1_03bf.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/midnight_algorithm_(한밤의_알고리즘)_v2_069e.mp3"
+                    }
+                ]
             }
         ]
     }
