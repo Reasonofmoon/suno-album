@@ -64,11 +64,27 @@ const Visualizer = {
         // Get Data
         this.analyser.getByteFrequencyData(dataArray);
 
+        // Debug: log audio data for first 10 frames
+        if (!this._debugCount) this._debugCount = 0;
+        if (this._debugCount < 10) {
+            const sum = dataArray.reduce((a, b) => a + b, 0);
+            const max = Math.max(...dataArray);
+            console.log(`[Visualizer] Frame ${this._debugCount}: sum=${sum}, max=${max}, first5=[${dataArray.slice(0,5).join(',')}]`);
+            this._debugCount++;
+        }
+
         // Clear
         this.ctx.clearRect(0, 0, width, height);
 
-        // Transparent background
-        // this.ctx.fillStyle = 'rgba(0, 0, 0, 0)'; 
+        // Always draw a subtle background glow to confirm canvas visibility
+        const gradient = this.ctx.createRadialGradient(
+            width / 2, height / 2, 0,
+            width / 2, height / 2, Math.max(width, height) / 2
+        );
+        gradient.addColorStop(0, 'rgba(124, 92, 255, 0.06)');
+        gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+        this.ctx.fillStyle = gradient;
+        this.ctx.fillRect(0, 0, width, height);
 
         switch (this.visualizationType) {
             case 'ocean':
