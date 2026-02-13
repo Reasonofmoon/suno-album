@@ -34,13 +34,20 @@ const Visualizer = {
 
     initParticles: function() {
         this.particles = [];
-        const particleCount = 100;
+        const particleCount = 200;
+        const colors = [
+            [124, 92, 255],   // accent purple
+            [0, 212, 170],    // accent teal
+            [255, 107, 157],  // accent pink
+            [200, 180, 255],  // light purple
+        ];
         for (let i = 0; i < particleCount; i++) {
+            const c = colors[Math.floor(Math.random() * colors.length)];
             this.particles.push({
                 x: Math.random() * this.canvas.width,
                 y: Math.random() * this.canvas.height,
-                radius: Math.random() * 3 + 1,
-                color: `rgba(255, 255, 255, ${Math.random() * 0.5 + 0.5})`,
+                radius: Math.random() * 4 + 2,
+                color: `rgba(${c[0]}, ${c[1]}, ${c[2]}, ${Math.random() * 0.4 + 0.4})`,
             });
         }
     },
@@ -64,27 +71,8 @@ const Visualizer = {
         // Get Data
         this.analyser.getByteFrequencyData(dataArray);
 
-        // Debug: log audio data for first 10 frames
-        if (!this._debugCount) this._debugCount = 0;
-        if (this._debugCount < 10) {
-            const sum = dataArray.reduce((a, b) => a + b, 0);
-            const max = Math.max(...dataArray);
-            console.log(`[Visualizer] Frame ${this._debugCount}: sum=${sum}, max=${max}, first5=[${dataArray.slice(0,5).join(',')}]`);
-            this._debugCount++;
-        }
-
         // Clear
         this.ctx.clearRect(0, 0, width, height);
-
-        // Always draw a subtle background glow to confirm canvas visibility
-        const gradient = this.ctx.createRadialGradient(
-            width / 2, height / 2, 0,
-            width / 2, height / 2, Math.max(width, height) / 2
-        );
-        gradient.addColorStop(0, 'rgba(124, 92, 255, 0.06)');
-        gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
-        this.ctx.fillStyle = gradient;
-        this.ctx.fillRect(0, 0, width, height);
 
         switch (this.visualizationType) {
             case 'ocean':
@@ -110,73 +98,71 @@ const Visualizer = {
         
         // Draw Wave
         const bufferLength = dataArray.length;
+        const sliceWidth = width / bufferLength * 4;
+        
+        // --- Wave fill with gradient ---
         this.ctx.beginPath();
-        
-        // Calculate Wave Points
+        this.ctx.moveTo(0, height * 0.7);
         let x = 0;
-        const sliceWidth = width / bufferLength * 4; // Spread out more
-        
-        // Start from middle left
-        this.ctx.moveTo(0, height / 2);
 
-        // Spline through points
         for (let i = 0; i < bufferLength; i++) {
            if (x > width) break;
-           
            const v = dataArray[i] / 255;
-           const y = v * (height * 0.4); // Amplitude scaling
-           
-           // We want the wave to be centered vertically, reacting up and down
-           // But frequency data is 0-255. 0 is silence.
-           // Let's make it a floor wave at the bottom 1/3
-           
-           // Simple wave approach from reference
+           const y = v * (height * 0.45);
            const waveY = (height * 0.7) - y;
-           
-           // Quadratic curve for smoothness
-            // Wait, we need pairs for quadratic. keep it simple for now or use the ref logic.
-            // Reference logic: 
-            /*
-            const midX = x + sliceWidth / 2;
-            const midY = (y + (dataArray[i + 1] / 255) * height) / 2;
-            ctx.quadraticCurveTo(x, y, midX, midY);
-            */
-            // Let's just draw lines for robustness first in vanilla
-            this.ctx.lineTo(x, waveY);
-            
-            x += sliceWidth;
+           this.ctx.lineTo(x, waveY);
+           x += sliceWidth;
         }
 
         this.ctx.lineTo(width, height);
         this.ctx.lineTo(0, height);
-        this.ctx.fillStyle = 'rgba(124, 92, 255, 0.2)'; // Accent purple tint
+        this.ctx.closePath();
+
+        // Gradient fill from purple to transparent
+        const grad = this.ctx.createLinearGradient(0, height * 0.3, 0, height);
+        grad.addColorStop(0, 'rgba(124, 92, 255, 0.6)');
+        grad.addColorStop(0.5, 'rgba(124, 92, 255, 0.3)');
+        grad.addColorStop(1, 'rgba(0, 212, 170, 0.1)');
+        this.ctx.fillStyle = grad;
         this.ctx.fill();
         
-        // Stroke
-        this.ctx.strokeStyle = 'rgba(124, 92, 255, 0.8)';
-        this.ctx.lineWidth = 2;
+        // Bright glowing stroke
+        this.ctx.strokeStyle = 'rgba(200, 180, 255, 0.9)';
+        this.ctx.lineWidth = 3;
+        this.ctx.shadowColor = 'rgba(124, 92, 255, 0.8)';
+        this.ctx.shadowBlur = 15;
+        this.ctx.stroke();
+        this.ctx.shadowBlur = 0;
+
+        // Second thinner bright inner stroke
+        this.ctx.strokeStyle = 'rgba(255, 255, 255, 0.6)';
+        this.ctx.lineWidth = 1;
         this.ctx.stroke();
     },
 
     drawOceanParticles: function(dataArray, width, height) {
         const numParticles = this.particles.length;
-        const movementScale = 2;
         const dataNormalizationFactor = 1 / 255;
 
         for (let i = 0; i < numParticles; i++) {
             const particle = this.particles[i];
+            
+            // Glow effect for particles
+            this.ctx.shadowColor = particle.color;
+            this.ctx.shadowBlur = 8;
             this.ctx.beginPath();
             this.ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
             this.ctx.fillStyle = particle.color;
             this.ctx.fill();
+            this.ctx.shadowBlur = 0;
 
             // Movement reacting to bass (low freqs)
-            const dataIndex = i % 20; // Use low frequencies
+            const dataIndex = i % 30;
             const dataValue = dataArray[dataIndex];
             const normalizedMovement = (dataValue * dataNormalizationFactor); 
             
-            particle.y -= normalizedMovement * 1; // Float up with bass
-            particle.x += Math.sin(particle.y * 0.05);
+            particle.y -= normalizedMovement * 1.5;
+            particle.x += Math.sin(particle.y * 0.03) * 1.2;
 
             // Reset
             if (particle.y < 0) particle.y = height;
@@ -194,14 +180,17 @@ const Visualizer = {
             const percent = v / 255;
             const barHeight = percent * height * 0.8;
 
-            const hue = 260 + (i * 0.5); // Purple to pink range
-            this.ctx.fillStyle = `hsla(${hue}, 80%, 50%, 0.8)`;
+            const hue = 260 + (i * 0.8);
+            this.ctx.shadowColor = `hsla(${hue}, 100%, 60%, 0.6)`;
+            this.ctx.shadowBlur = 10;
+            this.ctx.fillStyle = `hsla(${hue}, 90%, 60%, 0.9)`;
             
             this.ctx.fillRect(x, height - barHeight, barWidth, barHeight);
 
             x += barWidth + 1;
             if (x > width) break;
         }
+        this.ctx.shadowBlur = 0;
     },
 
     renderCircle: function(dataArray, width, height) {
