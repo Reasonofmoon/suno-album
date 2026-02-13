@@ -556,6 +556,22 @@
                         "file": "assets/midnight_algorithm_(한밤의_알고리즘)_v2_069e.mp3"
                     }
                 ]
+            },
+            {
+                "id": "d81c38c23de1329614d98c19b5e082fa",
+                "title": "Neon Bazaar (네온 바자르)",
+                "lyrics": "[Verse 1]\nNeon dragons coil around the market stalls\nDrumbeats echo off the holographic walls\nSpices from a planet I've never seen\nTrading futures for a taste of tangerine\n\n[Chorus]\nWelcome to the Neon Bazaar\nWhere the strange and the beautiful are\nEvery flavor, every sound\nCuriosity is the only currency around\n\n[Verse 2]\nAlgorithms haggle with the street-food queens\nRobots dance between the laser beams\nOld traditions wearing brand new skin\nThe future and the past are next of kin\n\n[Chorus]\nWelcome to the Neon Bazaar\nWhere the strange and the beautiful are\nEvery flavor, every sound\nCuriosity is the only currency around\n\n[Bridge]\nCome and see! Come and taste! Come and hear!\nEvery wonder of the world is gathered here!",
+                "art": "assets/cover_neon_bazaar_(네온_바자르).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/neon_bazaar_(네온_바자르)_v1_8bb1.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/neon_bazaar_(네온_바자르)_v2_c790.mp3"
+                    }
+                ]
             }
         ]
     }
