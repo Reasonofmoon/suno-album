@@ -1,0 +1,3 @@
+# LOG
+
+- YYYY-MM-DD: Scaffold created (BRIEF/OUTLINE/WORKPLAN/SOURCES/LOG).

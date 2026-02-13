@@ -1,0 +1,94 @@
+Q1.
+악동뮤지션 (AKMU)의 “어떻게 이별까지 사랑하겠어, 널 사랑하는거지” 라는 노래를 조사한 보고서 두개를 가져왔어 먼저 1번 보고서:
+(딥리서치 내용 복붙)
+
+그 다음 2번 보고서:
+(딥리서치2 내용 복붙)
+
+그 다음 첨부한 두장의 사진은 원곡의 가사 및 구조야. 
+(원곡 가사 스샷 첨부)
+
+자 이제 내 질문. 
+- 두개의 보고서를 크로스 체크해서 
+- 원곡의 가사를 봐봐 
+- 이 노래는 가사에서 전달되는 정서적 밀도가 특히 중요한 노래인만큼 단순히 곡을 테크니컬하게 똑같이 따라하기보다 가사 작사가 더 중요해 
+- 이제 작사 부분을 특히 신경쓰면서 
+- 원곡 가사 두 마디 이상 똑같이 겹치지 않으면서도 - 원곡과 똑같은 느낌의 노래를 만들기 위한 suno 새로운 노래 제목, 프롬프트 (영어), 및 가사를 각각 만들어줘
+
+
+---
+Q2.
+장르 프롬프트 너무 길어 1000자미만으로 압축
+
+
+
+Phase 2. (노래 만들어봤는데 몬가몬가 아쉬운데,, 더 갈궈보자)
+
+Q3.
+가사를 좀 더 담담하게 써줘 이별하고 오랜뒤에 내가 그걸 담담하게 쓰고 부르는거지
+
+
+Q4.
+(아래 프롬프트는 왜썼는가 - Q3로 가사는 나아졌는데 다시 만들어서 들어보니까 원곡보다 "너무 영화 OST적으로 웅장해서" 담담한 사운드가 아니어서 살짝 과한 느낌)
+Cinematic minimalist K-ballad / folk-pop, 65 BPM, 4/4, key F major with bittersweet D minor color. Rubato-feel piano intro (warm grand arpeggios) then slow wave-like build: sparse verse → wider chorus → orchestral swell → return to piano. Instruments: grand piano leads; legato cello anchors low emotion; violins/violas pad then sweep in swells; subtle acoustic guitar texture; percussion enters only mid/late (soft kick, rim clicks, brushed snare) as gentle heartbeat; bass mostly piano/cello lows (no aggressive electric). Vocals: airy close female lead with delicate breathy phrasing → controlled belt in bridge; grounded male harmony/unison lines and reflective outro; clean 3rds/6ths stacks. Harmony uses sus2/add9 colors and a minor iv (Bb minor) near outro for lingering heartbreak. Production: wide hall reverb (long decay) with vocal predelay for clarity, high dynamic range, warm low-mids, airy top, minimal drums, intimate yet expansive stereo.
+
+그러면 이렇게 해보자.
+
+지금 장르프롬프트가 이렇게 되있는데 cinematic 태그가 들어가서 그런지는 모르겠는데 더 미니멀리스틱하게 해서 사운드조차도 담담하게 해서 되려 더 이 노래의 애절함 파괴력이 더 세지면서도 원곡 갬성이랑 똑같이 하도록 바꿔줘
+
+Q5.
+장르프롬프트 길어 1000자미만으로
+
+
+---
+Phase 3. (노래 괜찮게 뽑혔으니 페르소나 만들어 검증해보자)
+Q6.
+좋아 그러면 여태까지 다듬은 노래로 잘 뽑혀서 이 가사로 최종으로 했고: [Intro | Piano Solo | Rubato, quiet] (soft hum) mm… [Verse 1 | Female Lead | calm, close] 몇 걸음쯤 떨어져 걷던 날이 있었어 너는 자주 뒤를 보곤 했지 나는 결국 아무 말도 하지 못했고 그 장면이 오래 남았어 이제 와서 보면 그때 우리는 둘 다 지쳐 있었더라 [Pre-Chorus | very light male harmony] 우리 사이에 힘든 일은 많았지만 그걸로 끝낼 사이는 아니었는데 마지막엔 이상하게도 서로를 지키는 방식이 달라졌어 [Chorus | Duo | restrained, open] 끝을 받아들이는 건 늦었고 지금은 그저 익숙해졌어 떠난다는 사실보다 남아 있는 마음이 더 오래 갔지 그래서 아직도 가끔 너를 나쁘게 말하진 못해 [Interlude | Piano + thin strings] (brief pause) [Verse 2 | Male Lead | conversational] 몇 번은 같은 길을 돌아가 봤어 괜히 멈췄다가 다시 걷고 아무 의미 없는 얘길 하면서 시간만 채웠지 잡고 있던 손이 사라진 뒤에야 비로소 속도가 달라졌어 [Pre-Chorus 2 | Duo | slightly wider] 우리가 멀어진 건 한 번의 사건이라기보다 작은 선택들이 쌓인 결과였고 그걸 이제는 인정해 [Chorus 2 | fuller but still calm] 끝을 받아들이는 건 늦었고 지금은 그저 익숙해졌어 기억은 흐려져도 어떤 마음은 형태를 남겨 나는 그걸 고치지 않고 그대로 두는 쪽을 택했어 [Bridge | Female Lead | steady, not explosive] 바다 같은 말들을 예전엔 믿었는데 지금은 그런 약속을 하지 않아 다만 너를 사랑했던 시간이 내 삶을 망치진 않았다고 그 정도는 말할 수 있어 담담하게 [Final Chorus | Duo | warm unison → harmony] 끝을 받아들이는 건 늦었고 지금은 그저 익숙해졌어 다 끝난 다음에도 가끔은 네 이름이 떠올라 그럴 때마다 나는 조용히 지나가게 둬 [Outro | Piano Solo | lingering, unresolved] 잘 지내라는 말도 미안하다는 말도 이제는 필요 없더라 그냥 여기까지였다고 정리해 두면 되더라 이걸 수노에 페르소나로 아예 등록해놨어. 이걸 바탕으로 완전 새로운 노래를 뽑아보자
+
+
+
+---
+Phase 4. (이제 노래가 검증되었으니 에이전트로 만들어보아요)
+
+Q7.
+그러면 다시 악동뮤지션 원곡 노래 보고서 2개로 돌아가보자: 먼저 1번 보고서:
+(딥리서치1 내용 전체 다시 복붙)
+그 다음 2번 보고서:
+(딥리서치2 내용 전체 다시 복붙)
+
+그리고 아래는 여태까지 분석한걸 바탕으로 새로 만든 노래인데 이런식으로 나왔어:
+(Phase 3에서 깎아서 잘뽑힌 최종버전 노래 장르 프롬프트 + 가사 순서대로 복붙)
+
+첨부한 파일까지 분석해서 1. 원본 보고서에서 알수있는 것들. 2. 그리고 내가 만든 노래의 장르 프롬프트와 가사 구조 (특히 곡 구조 및 퍼포먼스 태그까지 주목) 등을 종합해서 3. 작사작곡을 일관되게 하는 에이전트를 만들려고 해. 그러자면 어떤식으로 정리할 수 있지?
+
+
+
+
+---
+Phase 5. "에이전트" 프롬프트는 뭘로 만들어요? 그냥 만들어달라고 해요? 아니죠!!
+
+자 여기 밑에 주소를 보세요 디시인사이드 "특이점이 온다"갤러리에 fewweekslater라고 미친 인간이 있습니다:
+
+https://gall.dcinside.com/mgallery/board/view/?id=thesingularity&no=907541&exception_mode=recommend&search_head=120&page=1
+
+여기에서 "에일리 베일리"라는 txt를 다운받아서 봐보세요
+
+World Simulator라는 Gemini Gem으로 유명한 사람인데 "프롬프트 MD/TXT 달랑한개"로 캔버스가 호출되는 GEM을 만들정도로 프롬프트 엔지니어링을 하는 완전 미친놈입니다.
+
+그래서 이게 뭔상관이냐고요?
+"에일리 베일리 TXT 내용을 다 들어내고 이 프롬프트 쓰는 방식을 아키텍쳐라고 생각하고 에일리 베일리 아키텍처를 기반으로 이런이런 프롬프트 만들어줘"라고 해보세요
+아주 아주 기가막히게 나옵니다 (프롬프트 엔지니어링 몰라도 엄청나게 잘나오는 미친 팁)
+
+(실제 프롬프트)
+
+Q8.
+(Ailey & Bailey X_251023(Stable)_신.txt 첨부파일로 첨부)
+그러면 정리한 내용을 바탕으로 작사작곡 에이전트를 만들건데, 첨부한 파일은 아예 다른 내용 전혀상관없는 프롬프트이지만 보면 프롬프트 구조화가 굉장히 잘되있어. 이거 첨부파일 내용을 다 들어내고, 이 파일의 "아키텍쳐"를 기반으로 작사작곡 에이전트 만들어줘
+
+Q9.
+앞서 첨부한 에일리 베일리 아키텍처 기반으로 전체 풀 텍스트를 네 코멘트 없이 코드블럭 안에 작성 시작
+
+
+-----
+Phase 6. - 파인튜닝 및 마무리
+이정도만 해도 노래가 상당히 잘나오지만 그래도 테스트해보고 에이전트 프롬프트를 잘 "갈궈서" 파인튜닝 하시면 됩니다

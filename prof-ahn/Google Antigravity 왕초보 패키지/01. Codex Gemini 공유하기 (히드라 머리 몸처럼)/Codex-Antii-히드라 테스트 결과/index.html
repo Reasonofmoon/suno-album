@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PKM x AI Creation Curriculum</title>
+    <meta
+      name="description"
+      content="옵시디언 마크다운 노트를 중심으로 Claude Code/Antigravity CLI를 연결해 AI 창작을 설계하는 커리큘럼"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Source+Serif+4:opsz,wght@8..60,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #111316;
+        --bg-soft: #191d23;
+        --ink: #f2f4f6;
+        --ink-dim: #b6bec8;
+        --line: #2e3640;
+        --acid: #ceff3f;
+        --teal: #79f2dc;
+        --coral: #ff8f7a;
+        --card: rgba(23, 27, 33, 0.84);
+        --ring: 0 0 0 3px rgba(206, 255, 63, 0.45);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        font-family: "Source Serif 4", serif;
+        background:
+          radial-gradient(circle at 8% 12%, rgba(121, 242, 220, 0.12), transparent 42%),
+          radial-gradient(circle at 88% 82%, rgba(255, 143, 122, 0.14), transparent 46%),
+          linear-gradient(150deg, #0f1114 0%, #151a20 42%, #101419 100%);
+        min-height: 100vh;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.18;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+      }
+
+      .wrap {
+        width: min(1180px, 92vw);
+        margin: 0 auto;
+        padding: 2.6rem 0 4rem;
+      }
+
+      .meta {
+        display: flex;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.76rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink-dim);
+      }
+
+      .pill {
+        border: 1px solid var(--line);
+        background: rgba(28, 34, 40, 0.75);
+        padding: 0.33rem 0.56rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Bricolage Grotesque", sans-serif;
+        margin: 0;
+        letter-spacing: -0.02em;
+      }
+
+      h1 {
+        font-size: clamp(2.2rem, 8vw, 5.4rem);
+        line-height: 0.95;
+        margin-top: 1rem;
+        max-width: 12ch;
+      }
+
+      .hero-sub {
+        max-width: 62ch;
+        color: var(--ink-dim);
+        line-height: 1.62;
+        font-size: 1.08rem;
+        margin-top: 1.15rem;
+      }
+
+      .grid-two {
+        margin-top: 2rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1.35fr 1fr;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        padding: 1.1rem;
+        position: relative;
+        backdrop-filter: blur(6px);
+      }
+
+      .card::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(180deg, var(--acid), var(--teal));
+      }
+
+      .kicker {
+        font-family: "IBM Plex Mono", monospace;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        color: var(--teal);
+        margin-bottom: 0.45rem;
+      }
+
+      .section {
+        margin-top: 2.4rem;
+      }
+
+      .section h2 {
+        font-size: clamp(1.45rem, 4.6vw, 2.3rem);
+        margin-bottom: 0.7rem;
+      }
+
+      .section p {
+        color: var(--ink-dim);
+      }
+
+      .list {
+        margin: 0.75rem 0 0;
+        padding-left: 1.1rem;
+        line-height: 1.65;
+      }
+
+      .list li {
+        margin-bottom: 0.28rem;
+      }
+
+      .tracks {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.55rem;
+      }
+
+      .track-btn {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.75rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        border: 1px solid var(--line);
+        background: #1a2028;
+        color: var(--ink);
+        padding: 0.45rem 0.7rem;
+        cursor: pointer;
+      }
+
+      .track-btn[aria-pressed="true"] {
+        background: var(--acid);
+        border-color: #d9ff68;
+        color: #12161d;
+        font-weight: 700;
+      }
+
+      .track-btn:focus-visible {
+        outline: none;
+        box-shadow: var(--ring);
+      }
+
+      .module-grid {
+        margin-top: 1rem;
+        display: grid;
+        gap: 0.85rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .module {
+        border: 1px solid var(--line);
+        background: rgba(25, 30, 36, 0.92);
+        padding: 0.95rem;
+        transition: transform 220ms ease, border-color 220ms ease;
+      }
+
+      .module:hover {
+        transform: translateY(-3px);
+        border-color: var(--teal);
+      }
+
+      .module h3 {
+        font-size: 1.02rem;
+      }
+
+      .module p {
+        margin: 0.52rem 0 0;
+        line-height: 1.55;
+        color: var(--ink-dim);
+        font-size: 0.95rem;
+      }
+
+      .tagline {
+        display: inline-block;
+        margin-top: 0.5rem;
+        border: 1px solid #3d4752;
+        padding: 0.18rem 0.4rem;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.69rem;
+        color: var(--coral);
+      }
+
+      .code-box {
+        margin-top: 1rem;
+        border: 1px solid var(--line);
+        background: #0f1318;
+        padding: 0.95rem;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.8rem;
+        color: #dbf6ff;
+        white-space: pre-wrap;
+        line-height: 1.48;
+      }
+
+      .footer {
+        margin-top: 2.6rem;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.77rem;
+        color: #9eaab8;
+      }
+
+      @media (max-width: 920px) {
+        .grid-two {
+          grid-template-columns: 1fr;
+        }
+
+        .module-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .fade-up {
+          animation: fadeUp 0.6s ease both;
+        }
+        .fade-up:nth-of-type(2) {
+          animation-delay: 0.09s;
+        }
+        .fade-up:nth-of-type(3) {
+          animation-delay: 0.18s;
+        }
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(14px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <div class="meta fade-up">
+        <span class="pill">PKM-Centric Curriculum</span>
+        <span class="pill">Obsidian + Claude Code + Antigravity CLI</span>
+        <span class="pill">Personal Knowledge Operating System</span>
+      </div>
+
+      <h1 class="fade-up">노트가 창작의 엔진이 되는 방법</h1>
+      <p class="hero-sub fade-up">
+        이 페이지는 옵시디언 마크다운 노트에 맥락을 구조화하고, 이를 CLI 기반 AI 창작 루프와 연결해 실제
+        콘텐츠/코드/디자인 산출물을 만드는 교육 커리큘럼을 소개합니다. 핵심은 더 많은 프롬프트가 아니라,
+        더 정확한 맥락 운영입니다.
+      </p>
+
+      <section class="grid-two section fade-up">
+        <article class="card">
+          <div class="kicker">Step 1. Curriculum Plan</div>
+          <h2>기획 핵심</h2>
+          <ul class="list">
+            <li>문서 자산(노트)을 실행 자산(CLI)으로 연결하는 운영법을 학습</li>
+            <li>단발성 결과물이 아니라 반복 가능한 창작 파이프라인 구축</li>
+            <li>학습자는 매 모듈마다 노트 템플릿 + 실습 결과물을 남김</li>
+          </ul>
+          <span class="tagline">Outcome: 재현 가능한 개인 창작 시스템</span>
+        </article>
+        <article class="card">
+          <div class="kicker">Step 2. Design Directives</div>
+          <h2>디자인 지침</h2>
+          <ul class="list">
+            <li>테마: Editorial Terminal (정제된 기술 문서 감성)</li>
+            <li>강한 타이포 대비: Display Sans + Reading Serif + Mono 메타</li>
+            <li>비대칭 정보 배치, 카드별 역할 분리, 트랙 필터 인터랙션</li>
+            <li>접근성: WCAG AA 대비와 키보드 포커스 우선</li>
+          </ul>
+          <span class="tagline">Style: Bold hierarchy, low-genericity</span>
+        </article>
+      </section>
+
+      <section class="section fade-up">
+        <div class="kicker">Step 3. HTML Implementation</div>
+        <h2>8-Module Curriculum</h2>
+        <p>학습 트랙 필터를 눌러 모듈의 초점을 바꿔보세요.</p>
+        <div class="tracks" role="toolbar" aria-label="커리큘럼 필터">
+          <button class="track-btn" data-track="all" aria-pressed="true">All</button>
+          <button class="track-btn" data-track="foundation" aria-pressed="false">Foundation</button>
+          <button class="track-btn" data-track="automation" aria-pressed="false">Automation</button>
+          <button class="track-btn" data-track="publishing" aria-pressed="false">Publishing</button>
+        </div>
+        <div class="module-grid" id="modules">
+          <article class="module" data-track="foundation">
+            <h3>01. PKM 구조와 노트 정보 모델</h3>
+            <p>Vault 구조, 노트 타입, 링크 정책을 설계해 맥락 손실을 줄입니다.</p>
+          </article>
+          <article class="module" data-track="foundation">
+            <h3>02. Context Kernel 작성법</h3>
+            <p>문제, 독자, 제약, 스타일, 검증 기준을 한 노트에 정규화합니다.</p>
+          </article>
+          <article class="module" data-track="automation">
+            <h3>03. CLI 루프 기본기</h3>
+            <p>Claude Code/Antigravity CLI에서 초안 생성 -> 수정 -> 검증의 기본 루프를 익힙니다.</p>
+          </article>
+          <article class="module" data-track="automation">
+            <h3>04. 프롬프트 자산화</h3>
+            <p>프롬프트를 일회성 채팅이 아닌 재사용 가능한 노트 자산으로 관리합니다.</p>
+          </article>
+          <article class="module" data-track="automation">
+            <h3>05. 품질 검증 파이프라인</h3>
+            <p>사실성, 일관성, 톤, 근거를 체크하는 검증용 프롬프트 체인을 구축합니다.</p>
+          </article>
+          <article class="module" data-track="publishing">
+            <h3>06. 멀티 워크플로우 조합</h3>
+            <p>리서치/작성/리뷰 워크플로우를 상황별로 엮어 생산성을 올립니다.</p>
+          </article>
+          <article class="module" data-track="publishing">
+            <h3>07. 발행 포맷 전개</h3>
+            <p>블로그, 문서, 발표자료 형태로 동일 맥락을 전개하는 방법을 다룹니다.</p>
+          </article>
+          <article class="module" data-track="publishing">
+            <h3>08. 회고와 장기 축적</h3>
+            <p>반복 실험 로그를 남겨 개인 지식 운영체계를 장기적으로 고도화합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="grid-two section fade-up">
+        <article class="card">
+          <div class="kicker">Studio Protocol</div>
+          <h2>실전 운영 규칙</h2>
+          <ul class="list">
+            <li>모든 세션은 `Context Kernel` 노트 갱신으로 시작</li>
+            <li>CLI 실행 전 "목표/독자/제약/검증기준" 4요소 확인</li>
+            <li>산출물은 "유지/수정/삭제" 3분류 회고로 축적</li>
+            <li>매주 1회, 반복 오류를 템플릿 규칙으로 승격</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="kicker">Starter Kit</div>
+          <h2>맥락 노트 템플릿</h2>
+          <p>아래 템플릿을 옵시디언에 복사해 첫 세션을 시작하세요.</p>
+          <div class="code-box"># Context Kernel
+
+## 1. Intent
+- What am I trying to make?
+- What outcome is good enough?
+
+## 2. Audience
+- Who is it for?
+- What should they feel?
+
+## 3. Constraints
+- Time / Tooling / Tone / Must avoid
+
+## 4. Prompt Assets
+- Base / Style / Validator
+
+## 5. Iteration Log
+- Keep / Change / Next Action</div>
+        </article>
+      </section>
+
+      <p class="footer">
+        Built for `codex-anti-hydra-test` · Single-file HTML · Mobile-ready · Keyboard-focus accessible
+      </p>
+    </main>
+
+    <script>
+      const buttons = document.querySelectorAll(".track-btn");
+      const modules = document.querySelectorAll(".module");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const track = btn.getAttribute("data-track");
+          buttons.forEach((b) => b.setAttribute("aria-pressed", "false"));
+          btn.setAttribute("aria-pressed", "true");
+
+          modules.forEach((module) => {
+            const visible = track === "all" || module.dataset.track === track;
+            module.style.display = visible ? "block" : "none";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

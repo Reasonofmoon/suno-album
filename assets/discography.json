@@ -638,5 +638,173 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "album_5",
+        "title": "베르테르의 거울 (Werther's Mirror)",
+        "artist": "Reason Moon",
+        "cover_art": "assets/cover_werthers_mirror.png",
+        "tracks": [
+            {
+                "id": "werthers_01_윤곽_없는_사람",
+                "title": "윤곽 없는 사람",
+                "lyrics": "[Intro | Ambient Pad + Cello Drone | Energy: Low | Mood: Empty]\n(instrumental — 4 bars breathing space)\n\n[Verse 1 | Vocals: Breathy Whisper | Fingerpicked Guitar | Energy: Low]\n거울 앞에 서도 안개뿐이야\n손을 뻗으면 아무것도 없어\n이름을 불러도 메아리뿐\n윤곽 없는 사람이 웃고 있어\n\n[Verse 2 | Vocals: Searching | Energy: Low-Medium]\n하루를 살아도 형태가 없어\n비 오는 날 물웅덩이처럼\n누군가 밟고 지나가야만\n내가 여기 있었다는 걸 알아\n\n[Chorus | Vocals: Open Fragile | Cello Swell | Energy: Medium]\n나를 사랑하라고 했지만\n사랑할 내가 보이지 않았어\n빈 액자 속에 넣을 얼굴이\n아직 그려지지 않았어\n\n[Outro | Guitar Fade | Whispered]\n윤곽 없는 사람...\n누군가 그려주길 기다려",
+                "art": "assets/cover_werthers_mirror.png",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/werthers_01_윤곽_없는_사람_v1.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/werthers_01_윤곽_없는_사람_v2.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "werthers_02_당신이라는_빛",
+                "title": "당신이라는 빛",
+                "lyrics": "[Verse 1 | Vocals: Curious Soft | Jangly Guitar | Energy: Medium-Low]\n카페 창가에 앉은 너를 봤어\n무심한 햇빛이 너만 비추더라\n처음으로 색이 보였어\n회색 세계에 물감이 번지듯\n\n[Verse 2 | Vocals: Warming | Energy: Medium]\n네가 웃을 때 나도 웃고 있었어\n이유를 몰라서 무서웠어\n이런 감정에 이름이 있을까\n도서관을 다 뒤져도 답이 없는\n\n[Pre-Chorus | Building Excitement | Glockenspiel Enters]\n네 이름 세 글자가\n나침반이 되는 기분\n\n[Chorus | Vocals: Surprised Warmth | Full Band Shimmer | Energy: High-Medium]\n당신이라는 빛이 들어와\n어두운 방에 창이 생겼어\n나도 모르던 내 벽에 걸린\n그림자가 처음으로 춤을 춰\n\n[Bridge | Vocals: Whispered Wonder]\n이건 사랑일까\n아니면 처음 느끼는 나일까\n\n[Chorus | Repeat]\n당신이라는 빛이 들어와\n어두운 방에 창이 생겼어",
+                "art": "assets/cover_werthers_mirror.png",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/werthers_02_당신이라는_빛_v1.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/werthers_02_당신이라는_빛_v2.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "werthers_03_네가_보는_나",
+                "title": "네가 보는 나",
+                "lyrics": "[Verse 1 | Vocals: Controlled Speaking | Restrained Guitar | Energy: Medium]\n너는 말했어, 네 눈이 예쁘다고\n나는 웃었어, 농담인 줄 알았어\n거울 속 내 눈은 항상 피곤했는데\n네가 보는 나는 다른 사람 같아\n\n[Verse 2 | Vocals: Building Conviction | Energy: Medium-High]\n너는 말했어, 네 목소리가 좋다고\n노래를 불러달라고 했지\n한 번도 좋다는 말을 못 들었는데\n네 앞에서 처음 입을 열었어\n\n[Pre-Chorus | Strings Ascending | Energy: Rising]\n네가 보는 내가\n진짜 나일 수도 있을까\n\n[Chorus | Vocals: Powerful Open | Full Band Explosion | Energy: High]\n네가 보는 나를 나도 보고 싶어\n네 눈에 비친 내 윤곽을 따라가\n거울은 거짓말쟁이였어\n너만이 진짜 나를 비춰줬어\n\n[Bridge | Vocals: Raw Emotional | Piano + Strings]\n평생 들었던 말은\n\"넌 부족해, 넌 모자라\"\n근데 너는 말했어\n\"넌 이미 충분해\"\n\n[Final Chorus | Soaring | Full Orchestra + Band]\n네가 보는 나를 나도 믿어볼게\n네 눈이라는 거울을 빌려서\n처음으로 나를 그려본다\n당신 덕분에, 윤곽이 생긴다",
+                "art": "assets/cover_werthers_mirror.png",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/werthers_03_네가_보는_나_v1.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/werthers_03_네가_보는_나_v2.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "werthers_04_부드러운_연습",
+                "title": "부드러운 연습",
+                "lyrics": "[Verse 1 | Vocals: Warm Chest | Rhodes Piano | Energy: Medium-Low]\n넌 내 손에 밴드를 붙여줬어\n아무렇지 않게, 당연하다는 듯\n그 작은 손길이 알려줬어\n나도 나를 이렇게 대할 수 있다고\n\n[Verse 2 | Vocals: Growing Confidence | Muted Trumpet Enters]\n넌 내 실수에 웃어줬어\n\"괜찮아\" 두 글자가 약처럼\n그래서 연습해보는 거야\n거울 보며 나에게 말해보는 거야\n\n[Chorus | Vocals: Soulful Open | Full Groove | Energy: Medium]\n부드러운 연습을 시작해\n네가 나에게 했던 것처럼\n\"괜찮아, 잘하고 있어\"\n내가 나에게 속삭여본다\n\n[Bridge | Vocals: Tender Spoken + Sung | Backing Harmonies]\n여전히 어색해, 아직 서툴러\n자기 자신한테 다정하기가\n이렇게 어려운 줄 몰랐어\n하지만 너를 보면서 배워가\n\n[Chorus | Final | Energy: Medium-High]\n부드러운 연습을 멈추지 않을게\n네가 보여준 다정함을 교본 삼아\n오늘도 나에게 말해본다\n\"너는 사랑받을 자격이 있어\"",
+                "art": "assets/cover_werthers_mirror.png",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/werthers_04_부드러운_연습_v1.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/werthers_04_부드러운_연습_v2.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "werthers_05_고백_연습장",
+                "title": "고백 연습장",
+                "lyrics": "[Intro | Nylon Guitar Arpeggio | Energy: Minimal | Mood: Private]\n(instrumental — 4 bars, like opening a notebook)\n\n[Verse 1 | Vocals: Reading Aloud | Classical Guitar Only | Energy: Low]\n친애하는 나에게,\n이 편지를 쓰는 건 처음이야\n항상 남에게만 쓰던 편지를\n오늘은 나에게 보내보려 해\n\n[Verse 2 | Vocals: Confessional | Violin Enters | Energy: Low]\n그동안 미안했어, 나에게\n맨 마지막에 챙기고\n맨 처음에 미워하고\n제일 가혹한 심판관이었으니까\n\n[Chorus | Vocals: Gentle Acceptance | Violin + Guitar | Energy: Medium-Low]\n당신에게 고백하기 전에\n나에게 먼저 고백해야 할 것 같아\n나는 부족하지 않았어\n다만 그걸 아무도 말해주지 않았을 뿐\n\n[Bridge | Vocals: Whispered | Celeste Enters]\n이 편지를 부치진 않을 거야\n그냥 서랍에 넣어둘 거야\n하지만 썼다는 것만으로도\n나를 한 발짝 안아준 거니까\n\n[Outro | Vocals: Humming | Guitar Fade]\n(humming the chorus melody...)\n친애하는 나에게...",
+                "art": "assets/cover_werthers_mirror.png",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/werthers_05_고백_연습장_v1.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/werthers_05_고백_연습장_v2.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "werthers_06_거울의_정원",
+                "title": "거울의 정원",
+                "lyrics": "[Verse 1 | Vocals: Clear Folk | Acoustic Guitar + Mandolin | Energy: Medium]\n당신이 심어준 씨앗 하나가\n내 안에서 뿌리를 내렸어\n이름 모를 꽃이 피어나\n거울 속 정원이 열리기 시작해\n\n[Verse 2 | Vocals: Growing Wonder | Strings Enter | Energy: Medium]\n칭찬 한 마디가 물이 되고\n함께한 시간이 햇빛이 되어\n시들었던 가지마다\n새싹이 고개를 들어\n\n[Pre-Chorus | Flute Interlude | Stomp-Clap Enters]\n나도 몰랐어 이런 꽃이\n내 안에 있었다는 걸\n\n[Chorus | Vocals: Open Clear + Choir | Full Orchestra | Energy: High-Medium]\n거울의 정원이 자라나\n당신이라는 빛을 먹고서\n가시투성이 땅이었던 나에게\n봄이 왔어, 당신 덕분에 봄\n\n[Bridge | Vocals: Tender | Flute + Acoustic Only]\n아직 잡초도 많고\n돌밭도 남아있지만\n당신이 아름답다 말해준\n그 한마디가 비료가 됐어\n\n[Final Chorus | Vocals: Soaring + Choir | Full Band | Energy: High]\n거울의 정원을 걸어가\n당신과 나란히 이 길을 걸어\n처음으로 나의 꽃을 꺾어\n당신 머리에 꽂아줄게",
+                "art": "assets/cover_werthers_mirror.png",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/werthers_06_거울의_정원_v1.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/werthers_06_거울의_정원_v2.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "werthers_07_사라질까_봐",
+                "title": "사라질까 봐",
+                "lyrics": "[Intro | Pulsing Synth Arpeggio | Energy: Medium | Mood: Anxious]\n(heartbeat-like synth pulse builds)\n\n[Verse 1 | Vocals: Intimate Processed | Dark Synth | Energy: Medium]\n밤마다 같은 꿈을 꿔\n네가 등을 돌리는 꿈\n거울이 깨지는 소리에 깨면\n손에 쥔 건 빈 유리 조각뿐\n\n[Verse 2 | Vocals: Rising Anxiety | Noise Swells | Energy: Medium-High]\n네가 보여준 내가\n너 없이도 존재할 수 있을까\n혼자 남은 거울 앞에서\n안개만 다시 차오르면 어쩌지\n\n[Pre-Chorus | Vocals: Desperate Whisper | Bell Synth | Energy: Rising]\n놓치면 안 돼, 놓으면 안 돼\n이 거울만은 깨지면 안 돼\n\n[Chorus | Vocals: Breathless Urgency | Full Electronic Wall | Energy: High]\n사라질까 봐, 네가 사라질까 봐\n그러면 나도 다시 안개가 될까 봐\n당신 없는 거울에 비칠 내가\n다시 윤곽 없는 사람일까 봐\n\n[Bridge | Vocals: Broken Honest | Synth Drops to Pad | Energy: Low]\n이건 사랑이 아니라\n두려움인 걸 알아\n하지만 두려움 안에서도\n진짜 마음은 숨을 쉬고 있어\n\n[Chorus | Vocals: Resolved | Rebuilding | Energy: High]\n사라질까 봐, 그래도 말할게\n당신이 없어도 나는 여기 있을게\n깨진 거울 조각을 모아서\n내 손으로 다시 붙여볼게",
+                "art": "assets/cover_werthers_mirror.png",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/werthers_07_사라질까_봐_v1.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/werthers_07_사라질까_봐_v2.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "werthers_08_내_이름으로_서는_법",
+                "title": "내 이름으로 서는 법",
+                "lyrics": "[Intro | Guitar Riff + Drum Count In | Energy: High | Mood: Determined]\n(explosive guitar riff — 4 bars)\n\n[Verse 1 | Vocals: Raw Gritty | Driving Guitar | Energy: High]\n더 이상 네 눈을 빌리지 않아\n내 눈으로 나를 똑바로 볼 거야\n부족해도 괜찮아, 그게 나야\n완벽한 척 안 해도 나야\n\n[Verse 2 | Vocals: Fierce | Full Band Drive | Energy: High]\n네가 심어준 씨앗은 감사하지만\n물을 주는 건 이제 내 몫이야\n거울이 깨져도 나는 서 있어\n조각 하나하나가 다 내 얼굴이야\n\n[Pre-Chorus | Gang Vocals Enter | Energy: Rising to Peak]\n이름을 불러봐, 내 이름을\n내가 내 이름을 부를 차례야\n\n[Chorus | Vocals: Powerful Belt + Gang Chant | Full Band + Tambourine | Energy: Peak]\n내 이름으로 서는 법을 배웠어\n당신이 보여줬고, 내가 걸어왔어\n더 이상 빈 액자가 아니야\n내 얼굴로, 내 이름으로, 나로 서 있어\n\n[Bridge | Vocals: Quiet Honest → Building | Guitar Only | Energy: Medium → High]\n고마워, 진심으로\n네가 아니었으면 몰랐을 거야\n하지만 이제 알았으니까\n나는 나를 놓지 않을 거야\n\n[Final Chorus | Vocals: Maximum Power | Everything Full | Energy: Peak]\n내 이름으로 서는 법을 배웠어\n넘어져도 내가 나를 일으켜\n이건 너에 대한 사랑도 맞고\n나에 대한 사랑도 맞아 — 둘 다야",
+                "art": "assets/cover_werthers_mirror.png",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/werthers_08_내_이름으로_서는_법_v1.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/werthers_08_내_이름으로_서는_법_v2.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "werthers_09_베르테르의_고백",
+                "title": "베르테르의 고백",
+                "lyrics": "[Intro | Solo Piano | Energy: Low | Mood: The Most Important Confession]\n(piano arpeggios — 8 bars, unhurried)\n\n[Verse 1 | Vocals: Intimate Whisper | Piano Only | Energy: Low]\n세상은 말했어\n나를 먼저 사랑하라고\n그래야 남을 사랑할 수 있다고\n그래서 혼자 애를 썼어\n\n[Verse 2 | Vocals: Growing | Strings Enter | Energy: Medium-Low]\n텅 빈 거울 앞에서\n자기 사랑을 연습했지만\n사랑할 내가 보이지 않는데\n어떻게 사랑하라는 거야\n\n[Pre-Chorus | Vocals: Honest Pain | Strings Swell + French Horn | Energy: Medium]\n그러다 당신을 만났어\n모든 공식이 무너지는 순간\n\n[Chorus | Vocals: Open Emotional | Full Orchestra | Energy: High]\n당신을 사랑한 후에야\n나를 사랑하게 되었어\n순서가 틀렸다고 해도 괜찮아\n이것이 나의 진실이니까\n\n[Verse 3 | Vocals: Confessional | Piano + Cello | Energy: Medium]\n당신이 보여준 내 모습 속에서\n처음으로 사랑할 만한 나를 발견했어\n베르테르의 편지처럼\n격렬하고 또 서툰 이 고백\n\n[Chorus | Vocals: Full Voice | Full Orchestra + Choir | Energy: High]\n당신을 사랑한 후에야\n나를 사랑하게 되었어\n거울이 아니라 당신이었어\n나를 비춰준 건 처음부터 당신이었어\n\n[Bridge | Vocals: Maximum Vulnerability | Harp + Timpani | Energy: Peak Build]\n이 말을 하기까지\n십 년이 걸렸어\n나를 사랑하지 못하는 사람이\n감히 사랑을 말해도 되냐고\n\n근데 이제 알아\n사랑은 자격이 아니야\n당신이 나를 사랑해줬고\n그 사랑이 나를 깨웠어\n\n[Final Chorus | Vocals: Operatic Climax | Everything | Energy: Maximum]\n당신을 사랑한 후에야\n나를 사랑하게 되었어\n순서 따윈 상관없었어\n사랑이 먼저, 자격은 그 후에 온다",
+                "art": "assets/cover_werthers_mirror.png",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/werthers_09_베르테르의_고백_v1.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/werthers_09_베르테르의_고백_v2.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "werthers_10_나라는_계절",
+                "title": "나라는 계절",
+                "lyrics": "[Intro | Solo Piano | Energy: Minimal | Mood: Morning After Everything]\n(piano — 8 bars, like the first day of a new season)\n\n[Verse 1 | Vocals: Natural Intimate | Piano Only | Energy: Low]\n창문을 열면 바람이 와\n당신의 향기는 아니지만\n내가 좋아하는 냄새를 알아\n이제는 혼자서도\n\n[Verse 2 | Vocals: Peaceful | Wind Chimes + Birdsong | Energy: Low]\n거울 속에 사람이 서 있어\n윤곽이 선명한 사람이\n웃고 있어, 나한테 웃어\n처음으로 거울이 따뜻해\n\n[Chorus | Vocals: Gentle Open | Piano + Ambient Pad | Energy: Low-Medium]\n나라는 계절이 왔어\n당신이 심은 봄이 지나고\n여름, 가을, 겨울을 지나\n나만의 계절이 돌아왔어\n\n[Bridge | Vocals: Whispered Gratitude]\n고마워, 사랑했어\n아니, 사랑하고 있어\n당신이 떠나도 남는 건\n당신이 피워준 나니까\n\n[Outro | Vocals: Humming → Silence | Piano Fade | Energy: Minimal]\n(humming quietly...)\n나라는 계절...\n(piano sustain fading into silence)\n(birdsong continues alone — 4 bars)\n(silence)",
+                "art": "assets/cover_werthers_mirror.png",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/werthers_10_나라는_계절_v1.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/werthers_10_나라는_계절_v2.mp3"
+                    }
+                ]
+            }
+        ]
     }
 ]
