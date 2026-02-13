@@ -162,6 +162,7 @@ function playTrack(albumIdx, trackIdx, version = 0) {
     audio.src = ver.file;
     audio.play().then(() => {
         initVisualizer();
+        document.getElementById('visualizer-canvas').classList.add('active');
     }).catch(e => console.warn('Autoplay blocked:', e));
     isPlaying = true;
 
@@ -187,12 +188,15 @@ function playTrack(albumIdx, trackIdx, version = 0) {
 // === Player Controls ===
 function togglePlay() {
     if (!audio.src) return;
+    const vizCanvas = document.getElementById('visualizer-canvas');
     if (isPlaying) {
         audio.pause();
         document.getElementById('btn-play').textContent = '▶';
+        if (vizCanvas) vizCanvas.classList.remove('active');
     } else {
         audio.play();
         document.getElementById('btn-play').textContent = '⏸';
+        if (vizCanvas) vizCanvas.classList.add('active');
     }
     isPlaying = !isPlaying;
 }
