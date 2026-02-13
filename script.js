@@ -69,7 +69,11 @@ function initVisualizer() {
         console.warn('[Visualizer] Cannot init - canvas:', !!canvas, 'analyser:', !!analyserNode);
         return;
     }
-    console.log('[Visualizer] Initializing canvas:', canvas.clientWidth, 'x', canvas.clientHeight);
+    // Force canvas pixel dimensions to match viewport
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    console.log('[Visualizer] Canvas dimensions:', canvas.width, 'x', canvas.height);
+    
     Visualizer.init(canvas, analyserNode);
     visualizerInitialized = true;
     console.log('[Visualizer] Started successfully, type:', Visualizer.visualizationType);
@@ -165,16 +169,21 @@ function playTrack(albumIdx, trackIdx, version = 0) {
     const track = album.tracks[trackIdx];
     const ver = track.versions[version] || track.versions[0];
 
-    // Init Web Audio API on first user interaction
+    // Set source first
+    audio.src = ver.file;
+
+    // Init Web Audio API on first user interaction (must be after src is set)
     initAudioContext();
     if (audioCtx && audioCtx.state === 'suspended') {
         audioCtx.resume();
     }
 
-    audio.src = ver.file;
+    // Init visualizer immediately (don't wait for play promise)
+    initVisualizer();
+
     audio.play().then(() => {
-        initVisualizer();
-        document.getElementById('visualizer-canvas').classList.add('active');
+        const vizCanvas = document.getElementById('visualizer-canvas');
+        if (vizCanvas) vizCanvas.classList.add('active');
     }).catch(e => console.warn('Autoplay blocked:', e));
     isPlaying = true;
 

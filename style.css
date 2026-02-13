@@ -256,16 +256,16 @@ body {
 /* === Visualizer Canvas (Full-Screen Background) === */
 .visualizer-canvas {
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 0;
+    z-index: 1;
     pointer-events: none;
-    opacity: 0.6;
-    transition: opacity 0.6s ease;
+    opacity: 0.9;
 }
 .visualizer-canvas.active {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 /* === Visualizer Controls === */
