@@ -71,7 +71,7 @@ const Visualizer = {
         // Get Data
         this.analyser.getByteFrequencyData(dataArray);
 
-        // Clear
+        // Clear canvas to transparent — waves appear as bright overlay on page
         this.ctx.clearRect(0, 0, width, height);
 
         switch (this.visualizationType) {
@@ -100,7 +100,7 @@ const Visualizer = {
         const bufferLength = dataArray.length;
         const sliceWidth = width / bufferLength * 4;
         
-        // --- Wave fill with gradient ---
+        // --- Wave path ---
         this.ctx.beginPath();
         this.ctx.moveTo(0, height * 0.7);
         let x = 0;
@@ -108,7 +108,7 @@ const Visualizer = {
         for (let i = 0; i < bufferLength; i++) {
            if (x > width) break;
            const v = dataArray[i] / 255;
-           const y = v * (height * 0.45);
+           const y = v * (height * 0.5);
            const waveY = (height * 0.7) - y;
            this.ctx.lineTo(x, waveY);
            x += sliceWidth;
@@ -118,26 +118,28 @@ const Visualizer = {
         this.ctx.lineTo(0, height);
         this.ctx.closePath();
 
-        // Gradient fill from purple to transparent
-        const grad = this.ctx.createLinearGradient(0, height * 0.3, 0, height);
-        grad.addColorStop(0, 'rgba(124, 92, 255, 0.6)');
-        grad.addColorStop(0.5, 'rgba(124, 92, 255, 0.3)');
-        grad.addColorStop(1, 'rgba(0, 212, 170, 0.1)');
+        // Bright gradient fill — cyan to purple, high opacity
+        const grad = this.ctx.createLinearGradient(0, height * 0.2, 0, height);
+        grad.addColorStop(0, 'rgba(0, 255, 200, 0.5)');
+        grad.addColorStop(0.4, 'rgba(100, 140, 255, 0.35)');
+        grad.addColorStop(1, 'rgba(124, 92, 255, 0.1)');
         this.ctx.fillStyle = grad;
         this.ctx.fill();
         
-        // Bright glowing stroke
-        this.ctx.strokeStyle = 'rgba(200, 180, 255, 0.9)';
-        this.ctx.lineWidth = 3;
+        // Neon GLOW stroke — white core
+        this.ctx.shadowColor = 'rgba(0, 255, 200, 1)';
+        this.ctx.shadowBlur = 25;
+        this.ctx.strokeStyle = 'rgba(255, 255, 255, 1)';
+        this.ctx.lineWidth = 2;
+        this.ctx.stroke();
+        
+        // Outer glow
         this.ctx.shadowColor = 'rgba(124, 92, 255, 0.8)';
-        this.ctx.shadowBlur = 15;
+        this.ctx.shadowBlur = 40;
+        this.ctx.strokeStyle = 'rgba(0, 255, 200, 0.8)';
+        this.ctx.lineWidth = 3;
         this.ctx.stroke();
         this.ctx.shadowBlur = 0;
-
-        // Second thinner bright inner stroke
-        this.ctx.strokeStyle = 'rgba(255, 255, 255, 0.6)';
-        this.ctx.lineWidth = 1;
-        this.ctx.stroke();
     },
 
     drawOceanParticles: function(dataArray, width, height) {
