@@ -572,6 +572,22 @@
                         "file": "assets/neon_bazaar_(네온_바자르)_v2_c790.mp3"
                     }
                 ]
+            },
+            {
+                "id": "89e37c0d341c41d7c114ab6340ec43bc",
+                "title": "Paper Labyrinth (종이 미로)",
+                "lyrics": "[Verse 1]\nFolded maps of places that don't exist\nOrigami corridors of ink and mist\nEvery crease a choice, every fold a door\nI've been here a thousand times before\n\n[Chorus]\nIn this paper labyrinth I wander\nEvery dead end makes me fonder\nOf the question more than any answer\nI'm the maze and I'm the dancer\n\n[Verse 2]\nMarginal notes from philosophers long gone\nFootnotes leading to a different dawn\nThe Minotaur is just my curiosity\nWaiting at the center, grinning back at me\n\n[Bridge]\nTear the page? No...\nFold it again... and again...\nThe labyrinth grows more beautiful\nThe more I'm lost within\n\n[Chorus]\nIn this paper labyrinth I wander\nEvery dead end makes me fonder",
+                "art": "assets/cover_paper_labyrinth_(종이_미로).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/paper_labyrinth_(종이_미로)_v1_9974.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/paper_labyrinth_(종이_미로)_v2_bb10.mp3"
+                    }
+                ]
             }
         ]
     }
