@@ -620,6 +620,22 @@
                         "file": "assets/the_telescope_(망원경)_v2_d8e3.mp3"
                     }
                 ]
+            },
+            {
+                "id": "95ecae1aeea0930ca39389bcba1eafbe",
+                "title": "Spore Network (포자 네트워크)",
+                "lyrics": "[Data_Stream]\nMYCELIUM. PROTOCOL.\nNode to node to node.\nRoot-root-root-root-\nThe forest is online.\n\n[Verse 1]\nBeneath the soil a secret internet\nFungi trading carbon for the news\nA billion years before we had WiFi\nThe mushrooms had already paid their dues\n\n[Chorus]\nSpore network, underground\nConnecting every living thing around\nNo server, no cloud, no code\nJust mycelium carrying the load\n\n[Glitch_Break]\nPACKET LOSS IN SECTOR 7\nRE-ROUTING THROUGH OAK-NODE-42\nSIGNAL STRENGTH: ANCIENT\nBANDWIDTH: INFINITE\n\n[Verse 2]\nTrees send warnings through the fungal thread\nDistress calls rippling through the root\nThe wood wide web was always here\nWe just forgot to listen to the fruit\n\n[Outro]\nDownload complete.\nThe forest remembers everything.",
+                "art": "assets/cover_spore_network_(포자_네트워크).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/spore_network_(포자_네트워크)_v1_10c5.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/spore_network_(포자_네트워크)_v2_1771.mp3"
+                    }
+                ]
             }
         ]
     }
