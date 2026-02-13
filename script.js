@@ -29,12 +29,39 @@ let currentTrackIdx = -1;
 let currentVersion = 0;
 let isPlaying = false;
 
+// Web Audio API
+let audioCtx = null;
+let analyserNode = null;
+let sourceNode = null;
+let visualizerInitialized = false;
+
 const audio = document.getElementById('audio-player');
 const albumsGrid = document.getElementById('albums-grid');
 const albumDetail = document.getElementById('album-detail');
 const playerBar = document.getElementById('player-bar');
 const progressBar = document.getElementById('progress-bar');
 const progressFill = document.getElementById('progress-fill');
+
+// === Web Audio + Visualizer Setup ===
+function initAudioContext() {
+    if (audioCtx) return; // Already initialized
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    analyserNode = audioCtx.createAnalyser();
+    analyserNode.fftSize = 256;
+    analyserNode.smoothingTimeConstant = 0.8;
+
+    sourceNode = audioCtx.createMediaElementSource(audio);
+    sourceNode.connect(analyserNode);
+    analyserNode.connect(audioCtx.destination);
+}
+
+function initVisualizer() {
+    if (visualizerInitialized) return;
+    const canvas = document.getElementById('visualizer-canvas');
+    if (!canvas || !analyserNode) return;
+    Visualizer.init(canvas, analyserNode);
+    visualizerInitialized = true;
+}
 
 // === Init ===
 async function init() {
@@ -126,8 +153,16 @@ function playTrack(albumIdx, trackIdx, version = 0) {
     const track = album.tracks[trackIdx];
     const ver = track.versions[version] || track.versions[0];
 
+    // Init Web Audio API on first user interaction
+    initAudioContext();
+    if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
+
     audio.src = ver.file;
-    audio.play().catch(e => console.warn('Autoplay blocked:', e));
+    audio.play().then(() => {
+        initVisualizer();
+    }).catch(e => console.warn('Autoplay blocked:', e));
     isPlaying = true;
 
     // Update player bar
@@ -294,6 +329,19 @@ function setupEventListeners() {
             case 'ArrowLeft': prevTrack(); break;
         }
     });
+
+    // Visualizer mode controls
+    const vizControls = document.getElementById('visualizer-controls');
+    if (vizControls) {
+        vizControls.addEventListener('click', (e) => {
+            const btn = e.target.closest('.viz-btn');
+            if (!btn) return;
+            const mode = btn.dataset.viz;
+            vizControls.querySelectorAll('.viz-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            if (window.Visualizer) Visualizer.setType(mode);
+        });
+    }
 
     // Nav links
     document.querySelectorAll('.nav-link').forEach(link => {

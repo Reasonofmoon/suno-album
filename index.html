@@ -84,6 +84,8 @@
 
             <!-- Audio Player Bar -->
             <div class="player-bar" id="player-bar" style="display:none;">
+                <!-- Soundwave Visualizer Canvas -->
+                <canvas class="visualizer-canvas" id="visualizer-canvas"></canvas>
                 <div class="player-bar-inner">
                     <div class="player-track-info">
                         <img class="player-thumb" id="player-thumb" src="" alt="">
@@ -103,6 +105,12 @@
                             <div class="progress-fill" id="progress-fill"></div>
                         </div>
                         <span class="time-total" id="time-total">0:00</span>
+                    </div>
+                    <div class="visualizer-controls" id="visualizer-controls">
+                        <button class="viz-btn active" data-viz="ocean" title="Ocean">🌊</button>
+                        <button class="viz-btn" data-viz="bars" title="Bars">📊</button>
+                        <button class="viz-btn" data-viz="circle" title="Circle">⭕</button>
+                        <button class="viz-btn" data-viz="waveform" title="Wave">〰️</button>
                     </div>
                     <div class="player-version-select">
                         <select id="version-select" class="version-dropdown">
@@ -134,7 +142,8 @@
         <p class="footer-sub">Every track is a question curiosity asked.</p>
     </footer>
 
-    <audio id="audio-player" preload="auto"></audio>
+    <audio id="audio-player" preload="auto" crossorigin="anonymous"></audio>
+    <script src="assets/visualizer.js"></script>
     <script src="script.js"></script>
 </body>
 

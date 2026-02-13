@@ -132,11 +132,11 @@ const Visualizer = {
 
         this.ctx.lineTo(width, height);
         this.ctx.lineTo(0, height);
-        this.ctx.fillStyle = 'rgba(29, 185, 84, 0.2)'; // Primary color tint
+        this.ctx.fillStyle = 'rgba(124, 92, 255, 0.2)'; // Accent purple tint
         this.ctx.fill();
         
         // Stroke
-        this.ctx.strokeStyle = 'rgba(29, 185, 84, 0.8)';
+        this.ctx.strokeStyle = 'rgba(124, 92, 255, 0.8)';
         this.ctx.lineWidth = 2;
         this.ctx.stroke();
     },
@@ -177,7 +177,7 @@ const Visualizer = {
             const percent = v / 255;
             const barHeight = percent * height * 0.8;
 
-            const hue = i * 2; // Rainbow
+            const hue = 260 + (i * 0.5); // Purple to pink range
             this.ctx.fillStyle = `hsla(${hue}, 80%, 50%, 0.8)`;
             
             this.ctx.fillRect(x, height - barHeight, barWidth, barHeight);
