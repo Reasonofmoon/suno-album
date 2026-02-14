@@ -87,7 +87,7 @@ function initVisualizer() {
 // === Init ===
 async function init() {
     try {
-        const res = await fetch('assets/discography.json');
+        const res = await fetch('assets/discography.json?t=' + Date.now());
         discography = await res.json();
         renderAlbumCards();
         setupEventListeners();
