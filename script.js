@@ -16,11 +16,7 @@ const ALBUM_TAGS = {
         { text: 'Korean Market', cls: '' },
         { text: 'Fun', cls: 'cool' }
     ],
-    'album_4': [
-        { text: 'Curiosity', cls: 'warm' },
-        { text: 'Experimental', cls: '' },
-        { text: 'Multi-Genre', cls: 'cool' }
-    ],
+
     'album_5': [
         { text: 'Art Pop', cls: 'warm' },
         { text: 'Concept Album', cls: '' },
