@@ -1,0 +1,36 @@
+﻿albums:
+  - id: "T01_V01"
+    theme: "cafe_jazz"
+    title: "Cafe Jazz Vol.1 - Rainy Afternoon Sessions"
+    status: "draft"
+    tracks: 0
+    duration: "00:00:00"
+    publish_date: null
+    youtube_url: null
+    analytics: null
+    composer_qa_score: null
+    notes: null
+  - id: "T02_V02"
+    theme: "comfortable_melancholy"
+    title: "Comfortable Melancholy — 편안한 우울"
+    status: "draft"
+    tracks: 15
+    duration: "02:30:00"
+    publish_date: null
+    youtube_url: null
+    analytics: null
+    composer_qa_score: null
+    notes: "V02 prompts compliant with 5-Element Spec. Awaiting Suno generation."
+# Example entry:
+# - id: "T01_V01"
+#   theme: "cafe_jazz"
+#   title: "Cafe Jazz Vol.1 - Rainy Afternoon Sessions"
+#   status: "draft"  # draft | qa_review | approved | published
+#   tracks: 0
+#   duration: "00:00:00"
+#   publish_date: null
+#   youtube_url: null
+#   analytics: null
+#   composer_qa_score: null
+#   notes: null
+

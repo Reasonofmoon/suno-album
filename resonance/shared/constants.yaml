@@ -1,0 +1,84 @@
+project:
+  name: "Project RESONANCE"
+  directive_version: "1.0"
+  authority: "Reason of Moon"
+  effective_date: "2026-02-15"
+
+roles:
+  composer_namespace: "composer/"
+  publisher_namespace: "publisher/"
+
+quality_gate:
+  min_composite_score: 4.0
+  rubric_weights:
+    background_ability: 0.30
+    audio_quality: 0.20
+    theme_fit: 0.20
+    consistency: 0.15
+    listenability: 0.15
+
+audio_targets:
+  loudness_lufs: -14
+  true_peak_dbtp: -1.5
+  sample_rate_hz: 48000
+  output_audio_codec: "aac"
+  output_audio_bitrate: "320k"
+
+video_targets:
+  width: 1920
+  height: 1080
+  fps: 30
+  codec: "libx264"
+  crf: 18
+  container: "mp4"
+
+themes_tier1:
+  - id: T01
+    key: cafe_jazz
+    bpm_min: 80
+    bpm_max: 110
+    target_hours_min: 2
+    target_hours_max: 3
+  - id: T02
+    key: comfortable_melancholy
+    bpm_min: 65
+    bpm_max: 95
+    target_hours_min: 2
+    target_hours_max: 3
+  - id: T03
+    key: sleep_relax
+    bpm_min: 40
+    bpm_max: 60
+    target_hours_min: 3
+    target_hours_max: 8
+  - id: T04
+    key: lofi_hiphop
+    bpm_min: 70
+    bpm_max: 90
+    target_hours_min: 1
+    target_hours_max: 2
+  - id: T05
+    key: coding_dev
+    bpm_min: 90
+    bpm_max: 120
+    target_hours_min: 2
+    target_hours_max: 3
+  - id: T06
+    key: late_night
+    bpm_min: 60
+    bpm_max: 80
+    target_hours_min: 1
+    target_hours_max: 2
+
+upload:
+  primary_day: "friday"
+  primary_time_kst: "19:00"
+  growth_frequency_per_week_min: 2
+  growth_frequency_per_week_max: 3
+  steady_frequency_per_week_min: 1
+
+legal_guardrails:
+  instrumental_only_default: true
+  allow_artist_names_in_prompt: false
+  content_id_precheck_required: true
+  mandatory_plan: "Suno paid plan for commercial use"

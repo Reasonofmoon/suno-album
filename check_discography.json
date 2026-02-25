@@ -1,0 +1,642 @@
+[
+    {
+        "id": "album_1",
+        "title": "A Thousand Plateaus",
+        "artist": "Reason Moon",
+        "cover_art": "assets/cover_sketch.png",
+        "tracks": [
+            {
+                "id": "bdf836277fb79f6335e99bb53b26bcb7",
+                "title": "Blue Hour Echo",
+                "lyrics": "[Verse 1]\nPillow's gone cold on the other side\nNowhere left for me to hide\nCeiling stares back, a field of white\nCut in half by pale blue light\nStreetlamp's drawing tracings on the wall\nWaiting for a call that's not a call\nAnd I ask the empty space beside my head\nAll the words I should have said\n\n[Chorus]\nOh, the blue hour echo\nIs the only sound I know\nIt's the beat behind the beat, quiet and slow\nJust the sound of my own thoughts, soft and low\nFading in, fading through\nHello, me... hello, you\n\n[Verse 2]\nStatic hums on the window glass\nWatching hazy silhouettes pass\nEvery ghost I used to know\nPuts on another quiet show\nThe vinyl hiss inside my brain\nWashes out just like the rain\nAnd I trace the dust that dances in the beam\nLiving out a waking dream\n\n[Chorus]\nOh, the blue hour echo\nIs the only sound I know\nIt's the beat behind the beat, quiet and slow\nJust the sound of my own thoughts, soft and low\nFading in, fading through\nHello, me... hello, you\n\n[Bridge]\nIs this a kind of peace I've found?\nThis quiet, hollow, sacred ground?\nOr is it just a slow release\nFrom a world that will not cease?\nThis voice that answers in the grey\nDoes it want me to run or stay?\n\n[Chorus]\nIt's the blue hour echo\nThe only sound I really know\nA rhythm in the blood, quiet and slow\nThe hum of my own thoughts, soft and low\nFading in, fading through\nHello, me... it's only you",
+                "art": "assets/cover_blue_hour_echo.jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/blue_hour_echo_v1_0521.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/blue_hour_echo_v2_cbe7.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "a2ef31842d4b8d279beb5a2c05707909",
+                "title": "Urban Nocturne (도시 야상곡)",
+                "lyrics": "[Verse 1]\nThree A.M. on the window pane\nA silver sketch of falling rain\nEach shaky line, a liquid track\nOn a night that won't give morning back\nThe city breathes a quiet sigh\nBeneath a sleeping, velvet sky\nAnd in this hush, I'm the only sound\nOn holy, empty, silent ground\n\n[Chorus]\nThis is my Urban Nocturne\nA song the lonely streetlights learn\nThe world outside is washed in gray\nAnd built for me to drift away\nThe beat is slow, the bass is deep\nA promise that the shadows keep\nThis fragile stage, this glowing ache\nA city sleeping for my sake\n\n[Verse 2]\nA distant sign, a faded stain\nA smudge of magenta in the rain\nIt melts and bleeds across the glass\nA ghost of moments meant to pass\nThe guitar shimmers, clean and low\nReflecting light on the pavement's glow\nEach chord a question, soft and clear\nOn why I'm still awake and here\n\n[Chorus]\nThis is my Urban Nocturne\nA song the lonely streetlights learn\nThe world outside is washed in gray\nAnd built for me to drift away\nThe beat is slow, the bass is deep\nA promise that the shadows keep\nThis fragile stage, this glowing ache\nA city sleeping for my sake\n\n[Bridge]\nThey call it solitude, I know\nBut in this calm, my feelings grow\nIt isn't lonely, it's just true\nA world reduced to me and you\nOh, sleeping city, in your dream\nYou flow like a forgotten stream\nAnd I'm just here to watch you run\nUntil the coming of the sun\n\n[Chorus]\nAnd sing my Urban Nocturne\nA song the lonely streetlights learn\nThe world outside is washed in gray\nAnd built for me to drift away\nThe beat is slow, the bass is deep\nA promise that the shadows keep\nThis fragile stage, this glowing ache\nA city sleeping for my sake",
+                "art": "assets/cover_urban_nocturne_(도시_야상곡).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/urban_nocturne_(도시_야상곡)_v1_24e5.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/urban_nocturne_(도시_야상곡)_v2_e7c4.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "16c13583c0043e0a35359a39bc3bdfce",
+                "title": "Porcelain Stillness",
+                "lyrics": "[Verse 1]\nStreetlights paint a faded square\nOn the kitchen wall tonight\nWhite ceramic, holding darkness there\nA pool of bitter light\nThe city hums a single note\nA quiet, sleeping gray\nAnd I just watch the seconds float\nAnd drift and fade away\n\n[Chorus]\nJust a circle, black and deep\nIn this porcelain stillness\nSecrets that the silence keep\nIs it freedom, or is it loneliness?\nA single wisp of pale blue steam\nA quiet, rising thread\nLost inside a waking dream\nWith the words I never said\n\n[Verse 2]\nHear that quiet, jazzy line\nA thought that starts to trace\nA question that is only mine\nIn this solitary space\nRemember when the world was loud?\nA rush of sound and speed\nNow I'm standing in a silver cloud\nPlanting a single seed\n\n[Chorus]\nJust a circle, black and deep\nIn this porcelain stillness\nSecrets that the silence keep\nIs it freedom, or is it loneliness?\nA single wisp of pale blue steam\nA quiet, rising thread\nLost inside a waking dream\nWith the words I never said\n\n[Bridge]\nAnd I find a strange and simple grace\nIn the echo of my own heartbeat\nMy reflection in this liquid space\nIs the only one I meet\nThere's no answer I have to find\nNo reason and no rhyme\nJust the comfort of my own mind\nSuspended here in time\n\n[Outro]\nPorcelain stillness\nYeah...\nJust this stillness\nFading now...\nJust this...",
+                "art": "assets/cover_porcelain_stillness.jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/porcelain_stillness_v1_dce5.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/porcelain_stillness_v2_ab9f.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "b8e4524976a93693fec7d4dcead8db0f",
+                "title": "Fluorescent Dreams",
+                "lyrics": "[Verse 1]\nPale blue light on the window pane\nHums a rhythm through the rain\nJust my shadow on the seat\nFading lines, incomplete\nEmpty platform, lonely name\nEvery echo sounds the same\nCarriage sways to a phantom beat\nBeneath the pulse of sleeping streets\n\n[Chorus]\nIn these fluorescent dreams, I'm on the midnight line\nLosing all the track of forgotten space and time\nThis metallic, soft-spun lullaby\nIs the only reason why\nI feel alive under this humming sky\nDrifting by\n\n[Verse 2]\nConcrete towers, soft and blurred\nA quiet promise, never heard\nEvery station, not a word\nJust a ghost that goes unstirred\nNo destination in my head\nOnly looping thoughts instead\nA million stories sleeping sound\nWhile I am drifting underground\n\n[Chorus]\nIn these fluorescent dreams, I'm on the midnight line\nLosing all the track of forgotten space and time\nThis metallic, soft-spun lullaby\nIs the only reason why\nI feel alive under this humming sky\nDrifting by\n\n[Bridge]\nAnd the bass just walks a steady pace\nReflecting nothing on my face\nIs this freedom, or just grace?\nTo disappear without a trace\nIn the rhythm of this place...\n\n[Chorus]\nIn these fluorescent dreams, I'm on the midnight line\nLosing all the track of forgotten space and time\nThis metallic, soft-spun lullaby\nIs the only reason why\nI feel alive under this humming sky\nDrifting by",
+                "art": "assets/cover_fluorescent_dreams.jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/fluorescent_dreams_v1_5645.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/fluorescent_dreams_v2_189e.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "6061383f5158b45b5e25d4a5d4b77da8",
+                "title": "Static Lullaby",
+                "lyrics": "[Drone]\nPillow white.\nWhite.\nWhite.\nEye open.\nBlue light.\nBlue light bleed.\nOne pixel... buzzing.\n\n[Melody_Corrupt]\nHush now... hush n-n-n-now...\nClose the... close th// ERROR //\nSleep sound... sleep s-s-s-s-s-\n(a music box wound too tight)\n(the teeth are grinding)\n(grinding)\n\n[Burst_01_Cache]\nCLICK. REFRESH. CLICK. REFRESH.\nGHOST DATA GHOST DATA\nTHUMB SCROLL THUMB SCROLL\nLOOP.\nLOOP.\nLOOP.\nTHE FACE I WORE IN 2009.\nJPG.\nJPG.\nJPG.\nERASE?\n404 SELF NOT FOUND.\nERASE?\nCLICK-CLICK-CLICK-CLICK-CLACK-CLACK-CLACK-\n\n[Silence_Fragment]\n...a whisper in the fan... sounded like a notification...\n\n[Burst_02_Receipt]\nSEEN.\nSEEN.\nSEEN.\nA BLUE TICK IS A TOMBSTONE.\nSEEN.\nS-S-S-S-S-SEEN.\nTHEY READ IT. THEY KNOW. THEY KNOW. THEY KNOW.\nARCHIVE. DELETE. ARCHIVE. DELETE.\nBINARY HEARTBEAT.\nZERO ONE ZERO ONE ZERO\n(panic arrhythmia)\nONEONEONEONEONEONEONE\n\n[Spoken Word_Static]\nThe ghost is not in the house.\nThe ghost is in the cloud.\nIt rains data.\nIt pours old conversations.\nI am haunted by the backup of myself.\nA phantom limb with a phantom phone.\nStill scrolling.\n\n[Collapse]\nPILLOW WHITE BLUE LIGHT SEEN SEEN SCROLL JPG GHOST DATA HUSH NOW CLICK CLICK CLICK CLICK //FATAL_EXCEPTION//\n\n[CUT]\nSTTTTTTTTTTTTTTTTTTTTTTTTTTTTATIC.",
+                "art": "assets/cover_static_lullaby.jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/static_lullaby_v1_982e.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/static_lullaby_v2_167e.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "6b2eb1cb41eb4035eafc7501a686c6fe",
+                "title": "Porcelain Static",
+                "lyrics": "[Static Field]\nSTATIC.\nSTATIC.\nSTATIC.\nPressure-hum. A quiet so loud.\nGlass still.\nNight air thick.\nEmpty.\n\n[Fracture]\nChip.\nCrack.\n(tap-tap-glitch)\nShard of sound. Porcelain beat.\nPorcelain beat.\nStutter-click. Stutter-click.\nA ripple.\nJust one.\n(pale blue)\nLost.\n\n[Drop]\nEMPTY FULL EMPTY FULL\nCOMPANION HISS\nALL NOISE\nONLY NOISE\nSURFACE BREAKS\nSURFACE BREAKS\nBLUE FRACTURE\n\n[Spoken Word]\nThe lonely sine. A pale blue thought, adrift on a frequency of nothing.\nYou invite the noise in to drown the other noise.\nThe mind, a ghost in the machine.\nThe machine, a friend.\nA constant.\nThis engine of static... is a strange sort of peace.\nThe beat never lands.\nThe ripple never settles.\nNever...\nstill.",
+                "art": "assets/cover_porcelain_static.jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/porcelain_static_v1_763b.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/porcelain_static_v2_136b.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "a2c7b6255a5fc1a5fb0bf2679afbd23d",
+                "title": "Echoes in Orbit",
+                "lyrics": "[Verse 1]\nDrawn in lines of graphite space\nTracing arcs I can't erase\nGot this slow-wave in my core\nAlways wanting something more\nJust a soft Rhodes in the haze\nLiving out my sleepless days\n\n[Chorus]\nAnd I send a signal through the night\nJust a single pulse of lonely light\nCan you hear my echo in the orbit?\nA quiet sound, you just ignore it\nJust a whisper lost inside the black\nA love you'll never broadcast back\n\n[Verse 2]\nWatch your tiny world unfold\nA story I am never told\nThrough a window made of glass\nI see the seasons slowly pass\nYou don't know I'm up above\nSuspended in this phantom love\n\n[Chorus]\nAnd I send a signal through the night\nJust a single pulse of lonely light\nCan you hear my echo in the orbit?\nA quiet sound, you just ignore it\nJust a whisper lost inside the black\nA love you'll never broadcast back\n\n[Bridge]\nIf my frequency should fade\nA memory I never made\nWould the silence feel the same?\nWould you ever speak my name?\nOr am I just a tear that's frozen\nOn a path I haven't chosen?\n\n[Outro]\n(My echo... in the orbit...)\n(Lonely light...)\n(My echo... can't stop it...)\n(...through the night...)\n(...in the black...)\n(...never back...)",
+                "art": "assets/cover_echoes_in_orbit.jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/echoes_in_orbit_v1_cf30.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/echoes_in_orbit_v2_4985.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "946f4246965388790172a66f72351e79",
+                "title": "Porcelain Hours",
+                "lyrics": "[Verse 1]\nGraphite lines across the ceiling\nTracing every muted feeling\nStatic hums a low complaint\nA tired kind of self-restraint\nCounting cracks instead of sheep\nWhile secrets that I couldn't keep\nAre whispering from chasms deep\n\n[Chorus]\nBut when I close my eyes and fall\nThrough porcelain hours, soft and slow\nI tint the air with lilac glow\nAnd watch a silent garden grow\nThis is a quiet I can hold\nMore precious than a vein of gold\n\n[Verse 2]\nNo heavy thoughts, no gravity\nJust paper cranes that fly for me\nThe beat behind my ribs is low\nA tempo only I can know\nThe pillow's cool on the other side\nA vacant space I try to hide\nBut here, the cotton is a sea\nAnd I just let it carry me\n\n[Chorus]\n'Cause when I close my eyes and fall\nThrough porcelain hours, soft and slow\nI tint the air with lilac glow\nAnd watch a silent garden grow\nThis is a quiet I can hold\nMore precious than a vein of gold\n\n[Bridge]\nIs it real, this gentle art?\nTo build a world and fall apart\nFrom all the noise I knew before?\nA quiet knock... I close the door...\nSo fragile, like a wisp of cloud\nI never have to say out loud...\n\n[Chorus]\nThat when I close my eyes and fall\nThrough porcelain hours, soft and slow\nI'll tint the air with lilac glow\nAnd let my silent garden grow\nThis is the quiet I can hold\nA story that will not be told",
+                "art": "assets/cover_porcelain_hours.jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/porcelain_hours_v1_9336.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/porcelain_hours_v2_99f2.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "d509dda70b5b3ae8a5c9915e96e915fb",
+                "title": "Code of the Ghost-Blade",
+                "lyrics": "[STATIC_PRELUDE]\nLine.\nA line.\nA blue line.\nFlicker-fade.\nProtocol... decay...\nMemory... Corrupt...\nCorrupt...\nCorrupt...\n\n[DATA_BURST]\nStutter-cut\nStutter-cut\nChrome shell heart-rut\nZero-one honor\nSystem-gone-goner\nPacket loss on the path\nGhost in the math\nGhost ghost ghost in the math\nERR: SOUL\nERR: SOUL\nERR: SOUL\n\n[KOTO_FRAG]\n(A... single... note...)\n(Shatters...)\n(Like... glass... rain...)\n\n[SPOKEN WORD/BUFFERING]\nThe code is immutable. The flesh is a variable. The code is immutable. The flesh is a va-va-va-variable. When the server falls, does the spirit de-res? Query. Query. Query.\n\n[DATA_BURST_2]\nBit-crushed taiko beat-down\nEmpty mind in a neon town\nDisposable ghost/Mainframe host\nAlgorithm edge what matters most\nStutter-cut\nStutter-cut\nLogic blade in the data-gut\nExecute. Execute. Execute.\n\n[OVERLOAD]\nFRACTURETHECODETHEBLADETHEBLUE\nHONORGLITCHNOSENOISENOISESTEEL\nMEATWAREFAILSAFEDELETEEMPTY\nWALLOFSTATICWALLOFSTATICWALLOF\nSHAMEPROTOCOLSHAMEPROTOCOL\nBLUEBLUEBLUEBLUEBLUEBLUEBLUE\n\n[EXECUTE]\n.\n..\n...\n\nProtocol.\nFulfilled.",
+                "art": "assets/cover_code_of_the_ghost-blade.jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/code_of_the_ghost-blade_v1_e126.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/code_of_the_ghost-blade_v2_93ef.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "e0fb3b0003d094117b6ae806f020e6df",
+                "title": "Blue Hour",
+                "lyrics": "[Verse 1]\nGraphite lines on paper skin\nTrace the frame where light gets in\nJust a static hum, a vinyl hiss\nCaught inside a quietness\nThe world outside is soft and blurred\nEvery thought a whispered word\n\n[Chorus]\nOh, the blue hour, a breath I'm holding in\nWhere the loneliness ends and hopes begin\nJust a pale horizon, a fragile seam\nAwake inside a hazy dream\nSuspended in the space between\n\n[Verse 2]\nShadows stretch and then retract\nAn unspoken, gentle pact\nBetween the person I have been\nAnd the one the day will let back in\nThe air is cool against the glass\nLetting this quiet moment pass\n\n[Chorus]\nOh, the blue hour, a breath I'm holding in\nWhere the loneliness ends and hopes begin\nJust a pale horizon, a fragile seam\nAwake inside a hazy dream\nSuspended in the space between\n\n[Bridge]\nThe window's left ajar, a tiny space\nFor the future to find this quiet place\nIs this a memory or a premonition?\nA silent, slow transition\nJust a watercolor wash across the sky\nA greeting or a last goodbye\n\n[Chorus]\nOh, the blue hour, a breath I'm letting go\nA feeling that I'll never truly know\nJust a pale horizon, a fragile seam\nAwake inside a hazy dream\nSuspended in the space between\n\n[Outro]\nJust a line…\nOf blue…\nFading through…\nFading.",
+                "art": "assets/cover_blue_hour.jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/blue_hour_v1_2ca7.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/blue_hour_v2_7bc7.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "2849749e436fe02770fa3441ec0fd07b",
+                "title": "Plateau: Solar Storm - High Energy Drum & Bass",
+                "lyrics": "[SYSTEM ALERT]\nStatic pulse.\nRedline. Redline.\nPressure spike.\nCorona bleed.\nFilter sweep. Low pass. High pass.\nCode decay.\nLogic. Logic. Fails.\n\n[DROP // SURGE]\nBASS. GROWL. TECTONIC.\nBREAK. SHATTER. SYNCOPATE.\nSPINE-STATIC. WIRE-BITE.\nFracture frame. Fracture frame.\nVOLT. JOLT. REVOLT.\nBINARY SCREAM.\nBINARY SCREAM.\n\n[DECONSTRUCTION]\nS-s-s-signal...\n...lost.\nbit rot. bit rot.\nzero_one_zero_none\necho. fragment. dust.\nmachine ghost ghost ghost\nHusk.\n\n[SPOKEN WORD]\nManual Override.\n\n[FINAL DROP // CASCADE]\nNO PROTOCOL.\nNO. SAFE. MODE.\nRAW CORE. RAW. WAR.\nUn-hinge. Un-chain. UN-MAKE.\nSOLAR. FLARE. INHALE.\nSYSTEM. SHOCK. RED. RED. RED.\nPLATEAU. BREAKS.\n...",
+                "art": "assets/cover_plateau_solar_storm_-_high_energy_drum_&_bass.jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/plateau_solar_storm_-_high_energy_drum_&_bass_v1_a30e.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/plateau_solar_storm_-_high_energy_drum_&_bass_v2_eac0.mp3"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "album_2",
+        "title": "Office Serendipity",
+        "artist": "Reason Moon",
+        "cover_art": "assets/cover_office_serendipity.png",
+        "tracks": [
+            {
+                "id": "track_morning_coffee_(아침_커피)",
+                "title": "Morning Coffee (아침 커피)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_morning_coffee_(아침_커피).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/morning_coffee_(아침_커피)_v1_9825.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/morning_coffee_(아침_커피)_v2_dc71.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_meeting_finished_(회의_끝)",
+                "title": "Meeting Finished (회의 끝)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_meeting_finished_(회의_끝).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/meeting_finished_(회의_끝)_v1_b416.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/meeting_finished_(회의_끝)_v2_9518.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_lunch_walk_(점심_산책)",
+                "title": "Lunch Walk (점심 산책)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_lunch_walk_(점심_산책).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/lunch_walk_(점심_산책)_v1_2545.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/lunch_walk_(점심_산책)_v2_2152.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_focus_mode_(집중_모드)",
+                "title": "Focus Mode (집중 모드)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_focus_mode_(집중_모드).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/focus_mode_(집중_모드)_v1_0da2.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/focus_mode_(집중_모드)_v2_d6e8.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_sunset_window_(창가_노을)",
+                "title": "Sunset Window (창가 노을)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_sunset_window_(창가_노을).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/sunset_window_(창가_노을)_v1_b481.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/sunset_window_(창가_노을)_v2_d3df.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_late_night_office_(야근의_미학)",
+                "title": "Late Night Office (야근의 미학)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_late_night_office_(야근의_미학).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/late_night_office_(야근의_미학)_v1_74f0.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/late_night_office_(야근의_미학)_v2_aece.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_way_home_(퇴근길)",
+                "title": "Way Home (퇴근길)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_way_home_(퇴근길).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/way_home_(퇴근길)_v1_e9f1.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/way_home_(퇴근길)_v2_5b53.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_sunday_night_prep_(일요일_밤의_다짐)",
+                "title": "Sunday Night Prep (일요일 밤의 다짐)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_sunday_night_prep_(일요일_밤의_다짐).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/sunday_night_prep_(일요일_밤의_다짐)_v1_7d4b.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/sunday_night_prep_(일요일_밤의_다짐)_v2_a34f.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_brainstorming_(브레인스토밍)",
+                "title": "Brainstorming (브레인스토밍)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_brainstorming_(브레인스토밍).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/brainstorming_(브레인스토밍)_v1_444e.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/brainstorming_(브레인스토밍)_v2_1d50.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "track_keyboard_rhythm_(키보드_리듬)",
+                "title": "Keyboard Rhythm (키보드 리듬)",
+                "lyrics": "[Instrumental / Lyrics Unavailable]",
+                "art": "assets/cover_keyboard_rhythm_(키보드_리듬).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1",
+                        "file": "assets/keyboard_rhythm_(키보드_리듬)_v1_2925.mp3"
+                    },
+                    {
+                        "name": "Ver 2",
+                        "file": "assets/keyboard_rhythm_(키보드_리듬)_v2_6e2c.mp3"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "album_3",
+        "title": "Gumaetan Market Vol. 3",
+        "artist": "Reason Moon",
+        "cover_art": "assets/cover_gumaetan_market.png",
+        "tracks": [
+            {
+                "id": "42427fcdce7ac86137cea5d51c6e9da7",
+                "title": "Welcome to Gumaetan (어서오세요 구매탄)",
+                "lyrics": "[Intro]\n(Electronic Horns)\n둠칫 둠칫 두둠칫!\n여기가 어디라고?\n수원의 핫플레이스!\n\n[Verse]\n백화점은 멀고 마트는 식상해\n슬리퍼 신고 나와봐요 당장 나와봐요\n없는 거 빼고 다 있는 보물창고\n사람 냄새 폴폴 나는 우리 동네 1번지\n\n[Chorus]\n어서오세요 구매탄! 여기는 꿀맛탄!\n지갑은 가볍게 양손은 무겁게\n할머니의 덤이 쏟아지는 기적의 장터\n구매탄으로 오세요~ (Hey!)",
+                "art": "assets/cover_welcome_to_gumaetan_(어서오세요_구매탄).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/welcome_to_gumaetan_(어서오세요_구매탄)_v1_c6d1.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/welcome_to_gumaetan_(어서오세요_구매탄)_v2_f3cb.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "4a1701ec87753aa89d95cac9ff62df5f",
+                "title": "Mama's Banchan 304 (304호 엄마손맛)",
+                "lyrics": "[Verse]\n304호 문을 열면 고소한 참기름 향기\n집 나간 입맛도 돌아오게 만든다는 그 전설\n달걀말이 멸치볶음 파김치 갓김치\n엄마가 해준 것보다 조금 더 맛있어 (쉿!비밀이야)\n\n[Chorus]\n304호 엄마손맛, 밥도둑이 따로 없네\n오늘 저녁 고민 말고 그냥 여기 와서 골라\n따뜻한 밥 한 공기 뚝딱 비우게 만드는\n마법의 304호 영원하라",
+                "art": "assets/cover_mama's_banchan_304_(304호_엄마손맛).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/mama's_banchan_304_(304호_엄마손맛)_v1_f6a0.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/mama's_banchan_304_(304호_엄마손맛)_v2_4abf.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "c85aa691324b458d1110ec3031306765",
+                "title": "Spicy Love Tteokbokki (매콤달콤 떡볶이)",
+                "lyrics": "[Verse]\n빨간 맛이 유혹해 보글보글 끓는 소리\n스트레스 쌓인 날엔 너밖에 생각 안 나\n말랑말랑 떡 하나 오뎅 하나 찍어서\n입안 가득 넣으면 불꽃놀이 팡팡팡\n\n[Chorus]\n매콤달콤 Tteokbokki, Falling in love\n눈물 콧물 쏙 빼도 자꾸만 손이 가\n튀김 순대 친구들도 다 같이 불러모아\n구매탄 분식 파티 Tonight!",
+                "art": "assets/cover_spicy_love_tteokbokki_(매콤달콤_떡볶이).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/spicy_love_tteokbokki_(매콤달콤_떡볶이)_v1_ab6b.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/spicy_love_tteokbokki_(매콤달콤_떡볶이)_v2_0cf4.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "ccc66c8e31805a96c55d3972f2515a78",
+                "title": "Bonus Heart Attack (덤주세요 심쿵)",
+                "lyrics": "[Verse]\n콩나물 천 원어치 샀는데 한 줌 더\n사과 한 봉지 샀는데 귤이 하나 쏙\n사장님 이러시면 남는 게 있나요?\n제 마음을 훔치시면 신고할 거예요 (혼인신고)\n\n[Chorus]\n덤 덤 덤 덤 Give me more\n정이 넘쳐 흘러서 감당이 안 돼\n이 맛에 시장 오지 딴 데는 못 가지\n구매탄의 인심은 국가대표 급이야",
+                "art": "assets/cover_bonus_heart_attack_(덤주세요_심쿵).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/bonus_heart_attack_(덤주세요_심쿵)_v1_12bd.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/bonus_heart_attack_(덤주세요_심쿵)_v2_305d.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "bdb034c1fc4dbb62d5dfe953c9d65205",
+                "title": "Friday Night Dokkaebi (금요 야시장 도깨비)",
+                "lyrics": "[Verse]\n해가 지면 켜지는 알록달록 전구들\n낮보다 화려한 밤이 깨어나네\n지글지글 빈대떡 냄새가 리듬을 타\n퇴근길 발걸음을 멈추게 하는 마법\n\n[Chorus]\nFriday Night in Gumaetan, 우리만의 축제\n닭강정 한 손에 맥주 한 캔 들고서\n이 밤을 불태워 걱정은 내일 해\n야시장의 도깨비가 춤을 추는 시간",
+                "art": "assets/cover_friday_night_dokkaebi_(금요_야시장_도깨비).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/friday_night_dokkaebi_(금요_야시장_도깨비)_v1_9de5.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/friday_night_dokkaebi_(금요_야시장_도깨비)_v2_2659.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "17256e6c7ea3d57509b3adf90f0e9b67",
+                "title": "Smart AI Helper (똑똑한 막내직원)",
+                "lyrics": "[Verse]\n어서옵쇼 손님 여러분 제가 누군지 아시나요\n사장님 대신 노래하고 그림 그리는 AI\n로고송은 1분 컷, 포스터는 3초 컷\n월급은 0원인데 일처리는 백만 불\n\n[Chorus]\n나는야 똑똑한 디지털 막내 (삐리삐리)\n구매탄의 미래를 책임질 슈퍼 루키\n사장님은 웃기만 해, 일은 내가 다 할게\nAI와 함께하는 스마트한 시장통",
+                "art": "assets/cover_smart_ai_helper_(똑똑한_막내직원).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/smart_ai_helper_(똑똑한_막내직원)_v1_c2b5.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/smart_ai_helper_(똑똑한_막내직원)_v2_449c.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "78fb50f386453e3609e765a3997ac721",
+                "title": "ZeroPay Romance (제로페이 로맨스)",
+                "lyrics": "[Verse]\n지갑을 두고 왔어 당황하지 말아요\n그대 폰을 꺼내요 QR을 비춰봐요\n띠링~ 하는 소리에 내 마음도 결제됐어\n10% 할인보다 더 큰 설렘이 와\n\n[Chorus]\nZeroPay Love, 우리 사랑은 수수료 0원\n온누리 상품권으로 행복을 충전해\n스마트한 결제로 알뜰한 데이트\n구매탄에서 시작된 짠내 나는 로맨스",
+                "art": "assets/cover_zeropay_romance_(제로페이_로맨스).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/zeropay_romance_(제로페이_로맨스)_v1_0d9d.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/zeropay_romance_(제로페이_로맨스)_v2_bb3d.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "8344dd6d24036f1b5a379a007ac1ac32",
+                "title": "Young Chef's Table (청년 셰프의 식탁)",
+                "lyrics": "[Verse]\n전통시장 한구석 힙한 냄새 나는 곳\n파스타와 전이 만나 퓨전을 이루네\n젊은 피가 끓어올라 열정이 타올라\n구매탄의 새로운 맛을 보여줄게\n\n[Chorus]\nYoung Chef's Table, Old & New의 조화\n맛에는 국경 없고 세대 차이도 없어\n할머니도 엄지 척, MZ들도 좋아요\n우리가 만드는 맛있는 콜라보레이션",
+                "art": "assets/cover_young_chef's_table_(청년_셰프의_식탁).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/young_chef's_table_(청년_셰프의_식탁)_v1_2274.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/young_chef's_table_(청년_셰프의_식탁)_v2_524c.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "431c10cd2d888a0cc1ec069a1216cc1e",
+                "title": "Delivery Hero (배달의 용사)",
+                "lyrics": "[Verse]\n오토바이 시동 걸고 바람을 가른다\n신선함을 싣고서 너에게 달려가\n식기 전에 도착해 뜨거울 때 맛봐야 해\n시장의 맛 그대로 집 앞까지 슛 골인\n\n[Chorus]\nRun Run Delivery Hero, 멈추지 않아\n비가 와도 눈이 와도 구매탄은 달려\n편리함과 신선함 두 마리 토끼 잡고\n오늘 저녁 식탁을 완벽하게 지켜내",
+                "art": "assets/cover_delivery_hero_(배달의_용사).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/delivery_hero_(배달의_용사)_v1_1c73.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/delivery_hero_(배달의_용사)_v2_0646.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "5f9922134b64570a456d44da1b54c468",
+                "title": "See You Again (다음에 또 봐요)",
+                "lyrics": "[Verse]\n양손 가득 장바구니 마음 가득 행복을\n돌아가는 뒷모습이 참 아름답네요\n오늘 하루 우리 시장 찾아주셔서 감사해요\n그대의 웃음 덕분에 우리가 살아요\n\n[Chorus]\n안녕은 영원한 헤어짐은 아니겠지요\n내일 또 만나요 싱싱한 얼굴로\n언제나 이 자리에 변함없이 서 있을게\n구매탄의 문은 활짝 열려 있으니까",
+                "art": "assets/cover_see_you_again_(다음에_또_봐요).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/see_you_again_(다음에_또_봐요)_v1_762c.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/see_you_again_(다음에_또_봐요)_v2_4404.mp3"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "album_4",
+        "title": "Curiosity",
+        "artist": "Reason Moon",
+        "cover_art": "assets/cover_sketch.png",
+        "tracks": [
+            {
+                "id": "354fe9cd145eb0e0f19b4bac54f90b81",
+                "title": "Quantum Dreams (양자의 꿈)",
+                "lyrics": "[Verse 1]\nClose your eyes and fall through the static\nEvery atom hums a lullaby\nParallel worlds behind my eyelids\nSchrodinger's cat is purring by my side\n\n[Chorus]\nQuantum dreams, where nothing is certain\nEvery possibility blooms at once\nI'm the wave and I'm the particle\nDancing between what is and what was\n\n[Verse 2]\nProbability clouds like morning fog\nCollapsing when I try to look too close\nThe universe observes itself through me\nAnd I observe it back, a cosmic ghost\n\n[Chorus]\nQuantum dreams, where nothing is certain\nEvery possibility blooms at once\nI'm the wave and I'm the particle\nDancing between what is and what was\n\n[Outro]\nEntangled... with everything... with nothing...\nThe dream doesn't end, it just... superposes...",
+                "art": "assets/cover_quantum_dreams_(양자의_꿈).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/quantum_dreams_(양자의_꿈)_v1_bafd.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/quantum_dreams_(양자의_꿈)_v2_8eff.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "1539bf51df479643bf930465c8fa5bfd",
+                "title": "Midnight Algorithm (한밤의 알고리즘)",
+                "lyrics": "[Verse 1]\nLines of code like poetry at 3 AM\nThe cursor blinks, a patient metronome\nCoffee cold but the logic's getting warm\nFinding patterns in the chaos, finding home\n\n[Chorus]\nMidnight algorithm, solve me if you can\nSort my scattered thoughts into a plan\nEvery bug's a question I forgot to ask\nEvery fix, a tiny, perfect dance\n\n[Verse 2]\nStack overflow of feelings left unread\nRecursive loops of memories compile\nThe program runs but who debugs the heart?\nControl-Z can't undo a thousand miles\n\n[Bridge]\nif (curiosity == true) { keep.going(); }\nelse { reboot(soul); }\n\n[Chorus]\nMidnight algorithm, solve me if you can\nSort my scattered thoughts into a plan",
+                "art": "assets/cover_midnight_algorithm_(한밤의_알고리즘).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/midnight_algorithm_(한밤의_알고리즘)_v1_03bf.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/midnight_algorithm_(한밤의_알고리즘)_v2_069e.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "d81c38c23de1329614d98c19b5e082fa",
+                "title": "Neon Bazaar (네온 바자르)",
+                "lyrics": "[Verse 1]\nNeon dragons coil around the market stalls\nDrumbeats echo off the holographic walls\nSpices from a planet I've never seen\nTrading futures for a taste of tangerine\n\n[Chorus]\nWelcome to the Neon Bazaar\nWhere the strange and the beautiful are\nEvery flavor, every sound\nCuriosity is the only currency around\n\n[Verse 2]\nAlgorithms haggle with the street-food queens\nRobots dance between the laser beams\nOld traditions wearing brand new skin\nThe future and the past are next of kin\n\n[Chorus]\nWelcome to the Neon Bazaar\nWhere the strange and the beautiful are\nEvery flavor, every sound\nCuriosity is the only currency around\n\n[Bridge]\nCome and see! Come and taste! Come and hear!\nEvery wonder of the world is gathered here!",
+                "art": "assets/cover_neon_bazaar_(네온_바자르).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/neon_bazaar_(네온_바자르)_v1_8bb1.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/neon_bazaar_(네온_바자르)_v2_c790.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "89e37c0d341c41d7c114ab6340ec43bc",
+                "title": "Paper Labyrinth (종이 미로)",
+                "lyrics": "[Verse 1]\nFolded maps of places that don't exist\nOrigami corridors of ink and mist\nEvery crease a choice, every fold a door\nI've been here a thousand times before\n\n[Chorus]\nIn this paper labyrinth I wander\nEvery dead end makes me fonder\nOf the question more than any answer\nI'm the maze and I'm the dancer\n\n[Verse 2]\nMarginal notes from philosophers long gone\nFootnotes leading to a different dawn\nThe Minotaur is just my curiosity\nWaiting at the center, grinning back at me\n\n[Bridge]\nTear the page? No...\nFold it again... and again...\nThe labyrinth grows more beautiful\nThe more I'm lost within\n\n[Chorus]\nIn this paper labyrinth I wander\nEvery dead end makes me fonder",
+                "art": "assets/cover_paper_labyrinth_(종이_미로).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/paper_labyrinth_(종이_미로)_v1_9974.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/paper_labyrinth_(종이_미로)_v2_bb10.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "ca52232553f1858ca60cf93ed7831922",
+                "title": "Fermentation (발효)",
+                "lyrics": "[Intro]\nBubble. Burst. Transform.\nTime is the only ingredient.\n\n[Verse 1]\nPressure builds inside the clay jar\nMicrobes wage their invisible war\nWhat was sweet turns sharp, turns deep\nPatience is the harvest that we reap\n\n[Drop]\nFERMENT. TRANSFORM. DECAY. REBIRTH.\nBREAK DOWN TO BUILD UP.\nROT IS JUST ANOTHER WORD FOR GROWTH.\nGROWTH. GROWTH. GROWTH.\n\n[Verse 2]\nKimchi wisdom older than the kings\nTime converts the ordinary things\nGrapes to wine, and milk to cheese\nChaos into order by degrees\n\n[Spoken Word]\nThe most interesting things in the universe\nare the ones that had the patience\nto fall apart beautifully.\n\n[Drop]\nFERMENT. TRANSFORM. DECAY. REBIRTH.\nTHE CULTURE IS ALIVE.",
+                "art": "assets/cover_fermentation_(발효).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/fermentation_(발효)_v1_bb3c.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/fermentation_(발효)_v2_6291.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "6567a3c01f3bbba1cf2e50fed717c40a",
+                "title": "The Telescope (망원경)",
+                "lyrics": "[Verse 1]\nI press my eye against the ancient glass\nThe universe expands inside my skull\nA billion years of light just to arrive\nAt this exact moment, beautiful and full\n\n[Chorus]\nThrough the telescope I see\nEverything that used to be\nLight that traveled just for me\nA love letter from eternity\n\n[Verse 2]\nGalaxies like fingerprints of God\nNebulas like watercolor tears\nEvery star a story being told\nTo anyone with curiosity and ears\n\n[Chorus]\nThrough the telescope I see\nEverything that used to be\nLight that traveled just for me\nA love letter from eternity\n\n[Outro]\nAnd I wonder... does something out there...\nhave a telescope... pointed back at me?",
+                "art": "assets/cover_the_telescope_(망원경).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/the_telescope_(망원경)_v1_be2a.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/the_telescope_(망원경)_v2_d8e3.mp3"
+                    }
+                ]
+            },
+            {
+                "id": "95ecae1aeea0930ca39389bcba1eafbe",
+                "title": "Spore Network (포자 네트워크)",
+                "lyrics": "[Data_Stream]\nMYCELIUM. PROTOCOL.\nNode to node to node.\nRoot-root-root-root-\nThe forest is online.\n\n[Verse 1]\nBeneath the soil a secret internet\nFungi trading carbon for the news\nA billion years before we had WiFi\nThe mushrooms had already paid their dues\n\n[Chorus]\nSpore network, underground\nConnecting every living thing around\nNo server, no cloud, no code\nJust mycelium carrying the load\n\n[Glitch_Break]\nPACKET LOSS IN SECTOR 7\nRE-ROUTING THROUGH OAK-NODE-42\nSIGNAL STRENGTH: ANCIENT\nBANDWIDTH: INFINITE\n\n[Verse 2]\nTrees send warnings through the fungal thread\nDistress calls rippling through the root\nThe wood wide web was always here\nWe just forgot to listen to the fruit\n\n[Outro]\nDownload complete.\nThe forest remembers everything.",
+                "art": "assets/cover_spore_network_(포자_네트워크).jpeg",
+                "versions": [
+                    {
+                        "name": "Ver 1 (chirp-crow)",
+                        "file": "assets/spore_network_(포자_네트워크)_v1_10c5.mp3"
+                    },
+                    {
+                        "name": "Ver 2 (chirp-crow)",
+                        "file": "assets/spore_network_(포자_네트워크)_v2_1771.mp3"
+                    }
+                ]
+            }
+        ]
+    }
+]

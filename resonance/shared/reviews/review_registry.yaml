@@ -1,0 +1,10 @@
+reviews: []
+
+# Example:
+# - id: "ag_review_20260215_203000_01"
+#   source_agent: "ANTIGRAVITY"
+#   imported_at_kst: "2026-02-15 20:30"
+#   source_sync_path: "C:/Users/sound/.gemini/antigravity/knowledge/project_resonance/artifacts/PROMETHEUS_SYNC.md"
+#   source_sync_hash: "sha256..."
+#   status: "imported"
+#   review_file: "shared/reviews/incoming/ag_review_20260215_203000_01.md"

@@ -1,0 +1,48 @@
+version: "2026-02-15"
+project: "Project RESONANCE"
+contract_mode: "prometheus_v3_merge"
+
+agents:
+  codex:
+    focus: ["execution", "ops", "automation", "quality gates"]
+    output_prefix: "codex_"
+  antigravity:
+    focus: ["knowledge synthesis", "style system", "workflow ideation"]
+    output_prefix: "ag_"
+  joint:
+    output_prefix: "joint_"
+
+channels:
+  production_ops: "RESONANCE_SYNC.md"
+  cross_agent_governance: "PROMETHEUS_SYNC.md"
+  review_intake_registry: "shared/reviews/review_registry.yaml"
+
+source_of_truth:
+  workspace_root: "resonance/"
+  shared_specs:
+    - "shared/constants.yaml"
+    - "shared/agent_merge_contract.yaml"
+    - "shared/joint_codex_antigravity_merge_2026-02-15.md"
+    - "shared/reviews/ag_review_response_TEMPLATE.md"
+
+review_intake:
+  source_sync_default: "C:/Users/sound/.gemini/antigravity/knowledge/project_resonance/artifacts/PROMETHEUS_SYNC.md"
+  intake_tool: "tools/ingest_ag_review.ps1"
+  incoming_dir: "shared/reviews/incoming"
+  archive_dir: "shared/reviews/archive"
+  accepted_type: "REVIEW"
+  accepted_agent: "ANTIGRAVITY"
+
+merge_rules:
+  - "append-only logs; never rewrite historical sync entries"
+  - "no artist-name mimic prompts"
+  - "prompt format follows one-line 5-element compliance"
+  - "background-music channel defaults to instrumental mode"
+  - "major process changes must be logged as PROPOSAL before expansion"
+
+handoff_minimum_fields:
+  - "album_id"
+  - "theme"
+  - "runtime_target"
+  - "quality_gate_status"
+  - "next_owner"

@@ -1,0 +1,45 @@
+calendar:
+  timezone: "Asia/Seoul"
+  cadence:
+    target_albums_per_week_growth_min: 2
+    target_albums_per_week_growth_max: 3
+    target_albums_per_week_steady_min: 1
+  weekly_rhythm:
+    monday:
+      owner: composer
+      tasks:
+        - "Design next album prompts and theme map"
+    tuesday:
+      owner: composer
+      tasks:
+        - "Generate Suno tracks in batch"
+    wednesday:
+      owner: composer_and_publisher
+      tasks:
+        - "Composer QA and regen pass"
+        - "Publisher starts rough assembly"
+    thursday:
+      owner: publisher
+      tasks:
+        - "Render long-form video"
+        - "Prepare thumbnail and metadata"
+    friday:
+      owner: publisher
+      tasks:
+        - "Upload main album"
+        - "Post community update"
+    saturday:
+      owner: composer
+      tasks:
+        - "Prep next batch and theme review"
+    sunday:
+      owner: publisher
+      tasks:
+        - "Weekly analytics report and feedback handoff"
+  upload_windows:
+    - market: "KR primary"
+      day: "friday"
+      time: "19:00"
+    - market: "US catch-up"
+      day: "friday"
+      time: "22:00"

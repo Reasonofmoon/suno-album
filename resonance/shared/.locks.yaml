@@ -1,0 +1,11 @@
+# RESONANCE Lock Registry
+# 에이전트가 공유 파일 수정 전 잠금을 등록하는 파일
+# 규칙: AGENT_PROTOCOL.md 참조
+
+locks: []
+# 예시:
+# locks:
+#   - file: "shared/distribution_strategy.md"
+#     owner: "ANTIGRAVITY"
+#     since: "2026-02-15 21:00 KST"
+#     reason: "전략 업데이트"
